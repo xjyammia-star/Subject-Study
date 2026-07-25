@@ -9,6 +9,25 @@ interface Props {
 }
 
 export default function ImagePlaceholder({ section, lang }: Props) {
+  if (section.url) {
+    return (
+      <figure className="rounded-lg overflow-hidden border border-border">
+        <div className="relative w-full bg-surface-2" style={{ aspectRatio: "16 / 9" }}>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={section.url}
+            alt={t(lang, section.caption, section.captionZh)}
+            className="w-full h-full object-cover"
+          />
+        </div>
+        <figcaption className="bg-surface-2 px-4 py-2.5 text-[13px] text-gray-400 flex justify-between items-center">
+          <span>{t(lang, section.caption, section.captionZh)}</span>
+          <span className="text-[11px] text-gray-600">{section.source}</span>
+        </figcaption>
+      </figure>
+    );
+  }
+
   return (
     <div className="bg-surface-2 border border-border rounded-lg flex flex-col items-center justify-center py-12 gap-2">
       <span className="text-2xl text-gray-600">🖼️</span>

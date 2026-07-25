@@ -97,7 +97,8 @@ export const atlanticSlaveTrade: Topic = {
           type: "image",
           caption: "Great Zimbabwe — evidence of a major African civilisation",
           captionZh: "大津巴布韦——非洲重要文明的证据",
-          source: "Wikimedia Commons",
+          source: "Wikimedia Commons (CC BY-SA)",
+          url: "/images/lesson1.jpg",
         },
         {
           type: "source",
@@ -253,7 +254,8 @@ export const atlanticSlaveTrade: Topic = {
           type: "image",
           caption: "Map of the triangular trade route across the Atlantic",
           captionZh: "大西洋三角贸易路线图",
-          source: "Wikimedia Commons",
+          source: "Wikimedia Commons (CC0)",
+          url: "/images/lesson2.jpg",
         },
         {
           type: "source",
@@ -407,9 +409,10 @@ export const atlanticSlaveTrade: Topic = {
         },
         {
           type: "image",
-          caption: "Coastal slave fort in West Africa \u2014 where captives were held before the voyage",
-          captionZh: "西非海岸奴隶堡垒\u2014\u2014俘虏在航行前被关押的地方",
-          source: "Wikimedia Commons",
+          caption: "Elmina Castle, Ghana \u2014 a coastal fort where captives were held before the voyage",
+          captionZh: "\u52a0\u7eb3\u57c3\u5c14\u7c73\u7eb3\u57ce\u5821\u2014\u2014\u4ff8\u864f\u5728\u822a\u884c\u524d\u88ab\u5173\u62bc\u7684\u6d77\u5cb8\u5821\u5792",
+          source: "Wikimedia Commons (CC BY-SA)",
+          url: "/images/lesson3.jpg",
         },
         {
           type: "source",
@@ -565,7 +568,8 @@ export const atlanticSlaveTrade: Topic = {
           type: "image",
           caption: "The Brookes slave ship diagram \u2014 showing how enslaved people were packed below deck",
           captionZh: "\u5e03\u9c81\u514b\u65af\u53f7\u5974\u96b6\u8239\u56fe\u2014\u2014\u5c55\u793a\u88ab\u5974\u5f79\u7684\u4eba\u5982\u4f55\u88ab\u6324\u5728\u7532\u677f\u4e0b",
-          source: "Wikimedia Commons",
+          source: "Wikimedia Commons (Public Domain)",
+          url: "/images/lesson4.jpg",
         },
         {
           type: "source",
@@ -719,9 +723,10 @@ export const atlanticSlaveTrade: Topic = {
         },
         {
           type: "image",
-          caption: "A slave auction in the Americas",
-          captionZh: "\u7f8e\u6d32\u7684\u4e00\u573a\u5974\u96b6\u62cd\u5356",
-          source: "Wikimedia Commons",
+          caption: "Enslaved Africans arriving by ship \u2014 before being sold in the Americas",
+          captionZh: "\u88ab\u5974\u5f79\u7684\u975e\u6d32\u4eba\u4e58\u8239\u62b5\u8fbe\u2014\u2014\u5728\u7f8e\u6d32\u88ab\u51fa\u552e\u4e4b\u524d",
+          source: "Wikimedia Commons (Public Domain)",
+          url: "/images/lesson5.jpg",
         },
         {
           type: "source",
@@ -875,9 +880,10 @@ export const atlanticSlaveTrade: Topic = {
         },
         {
           type: "image",
-          caption: "Enslaved people working on a sugar plantation in the Caribbean",
-          captionZh: "\u88ab\u5974\u5f79\u7684\u4eba\u5728\u52a0\u52d2\u6bd4\u6d77\u7684\u7cd6\u6599\u79cd\u690d\u56ed\u5de5\u4f5c",
-          source: "Wikimedia Commons",
+          caption: "Enslaved people cutting sugar cane on a Caribbean plantation, 1823",
+          captionZh: "\u88ab\u5974\u5f79\u8005\u5728\u52a0\u52d2\u6bd4\u6d77\u79cd\u690d\u56ed\u7802\u7cd6\u7684\u573a\u666f\uff0c1823\u5e74",
+          source: "Wikimedia Commons (Public Domain)",
+          url: "/images/lesson6.jpg",
         },
         {
           type: "source",

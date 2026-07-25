@@ -164,9 +164,154 @@ export const atlanticSlaveTrade: Topic = {
       badge: "T",
       title: "The triangular trade",
       titleZh: "三角贸易",
-      subtitle: "",
-      subtitleZh: "",
-      sections: [],
+      subtitle:
+        "How a three-sided trade route connected Britain, Africa, and the Americas — and who profited.",
+      subtitleZh:
+        "一条三角贸易路线如何连接了英国、非洲和美洲——以及谁从中获利。",
+      sections: [
+        {
+          type: "goals",
+          items: [
+            {
+              en: "I can describe the three stages of the triangular trade.",
+              zh: "我能描述三角贸易的三个阶段。",
+            },
+            {
+              en: "I can explain why Europeans wanted enslaved labour in the Americas.",
+              zh: "我能解释为什么欧洲人需要美洲的奴隶劳动力。",
+            },
+            {
+              en: "I can explain how traders made profit at every stage of the triangle.",
+              zh: "我能解释贸易商如何在三角贸易的每个阶段获利。",
+            },
+          ],
+        },
+        {
+          type: "intro",
+          content: [
+            {
+              type: "text",
+              en: "During the 1500s, Europe had many powerful trading nations. They sold fabrics, alcohol, and weapons in exchange for resources that they did not have. At the same time, many European colonists had moved to settle in America but did not have enough people to complete the work they wanted to do.",
+              zh: "在1500年代，欧洲有许多强大的贸易国家。他们出售织物、酒精和武器，以换取他们没有的资源。与此同时，许多欧洲殖民者已经迁移到美洲定居，但没有足够的人手来完成他们想做的工作。",
+            },
+            {
+              type: "text",
+              en: "The early settlers tried to force the Native Americans to work for them, but it still was not enough. So traders went to countries on the coast of Africa to find new workers. British traders traded their goods to African chiefs, who in turn offered them people captured from other tribes.",
+              zh: "早期定居者试图强迫美洲原住民为他们工作，但仍然不够。因此贸易商前往非洲海岸的国家寻找新的劳动力。英国贸易商用他们的商品与非洲首领交易，首领们则提供从其他部落俘获的人。",
+            },
+            {
+              type: "highlight",
+              en: "The trade route formed a triangle across the Atlantic. Stage 1: British ships sailed to West Africa carrying manufactured goods — cloth, metal goods, guns, and alcohol. Stage 2 (the Middle Passage): enslaved Africans were shipped across the Atlantic to the Americas and the Caribbean. Stage 3: plantation products such as sugar, tobacco, and coffee were shipped back to Britain.",
+              zh: "贸易路线在大西洋上形成了一个三角形。第一阶段：英国船只载着制成品——布料、金属制品、枪支和酒精——驶向西非。第二阶段（中间航程）：被奴役的非洲人被运过大西洋到美洲和加勒比海。第三阶段：种植园产品如糖、烟草和咖啡被运回英国。",
+            },
+            {
+              type: "text",
+              en: "Ships did not sail empty at any stage — traders made money on every leg of the journey. Around 80,000 Africans were taken across the Atlantic as slaves every year, and about 40,000 of them were carried in British ships. An estimated 15 million Africans were transported to the Americas between 1540 and 1850.",
+              zh: "船只在任何阶段都不会空载航行——贸易商在旅程的每一段都赚钱。每年约有80,000名非洲人被作为奴隶运过大西洋，其中约40,000人由英国船只运载。据估计，在1540年至1850年间，约有1500万非洲人被运往美洲。",
+            },
+            {
+              type: "example",
+              en: "Imagine a business where every journey earns money — going out, crossing over, and coming back. That is exactly how the triangular trade worked. No part of the voyage was wasted, and each stage fed into the next.",
+              zh: "想象一种每次旅程都能赚钱的生意——出发、渡海和返回。这正是三角贸易的运作方式。旅程的任何部分都不会被浪费，每个阶段都为下一个阶段提供支撑。",
+            },
+          ],
+        },
+        {
+          type: "vocab",
+          words: [
+            {
+              en: "Triangular trade",
+              zh: "三角贸易",
+              defEn:
+                "A three-stage trading route across the Atlantic that connected Europe, Africa, and the Americas.",
+              defZh: "一条横跨大西洋的三阶段贸易路线，连接了欧洲、非洲和美洲。",
+            },
+            {
+              en: "Middle Passage",
+              zh: "中间航程",
+              defEn:
+                "The second stage of the triangular trade — the forced voyage of enslaved Africans across the Atlantic.",
+              defZh: "三角贸易的第二阶段——被奴役的非洲人被迫横渡大西洋的航程。",
+            },
+            {
+              en: "Plantation system",
+              zh: "种植园制度",
+              defEn:
+                "A system of farming where crops like sugar and tobacco were grown on large estates using enslaved labour.",
+              defZh: "一种农业制度，利用奴隶劳动力在大庄园种植糖和烟草等作物。",
+            },
+            {
+              en: "Colonist",
+              zh: "殖民者",
+              defEn:
+                "A person who moves from their home country to settle and live in a new territory.",
+              defZh: "从自己的国家搬迁到新领地定居生活的人。",
+            },
+          ],
+        },
+        {
+          type: "image",
+          caption: "Map of the triangular trade route across the Atlantic",
+          captionZh: "大西洋三角贸易路线图",
+          source: "Wikimedia Commons",
+        },
+        {
+          type: "source",
+          labelEn: "A key historical source",
+          labelZh: "一个重要的历史来源",
+          en: "An estimated 15 million Africans were transported to the Americas between 1540 and 1850. To maximise their profits, slave merchants carried as many slaves as was physically possible on their ships. A typical slave ship carried no fewer than 200 and no more than 500 slaves when it departed from West Africa. The slave ship provided an average of about seven square feet per slave. By the 17th century, slaves could be purchased in Africa for about $25 and sold in the Americas for about $150.",
+          zh: "据估计，在1540年至1850年间，约有1500万非洲人被运往美洲。为了最大化利润，奴隶商人在船上装载了尽可能多的奴隶。一艘典型的奴隶船从西非出发时载有不少于200人、不多于500人的奴隶。奴隶船平均为每个奴隶提供约七平方英尺的空间。到17世纪，在非洲购买一个奴隶大约需要25美元，在美洲出售则约为150美元。",
+        },
+        {
+          type: "think",
+          questions: [
+            {
+              qEn: "The triangular trade is often described as a 'system'. What makes it a system rather than just a series of individual journeys?",
+              qZh: "三角贸易常被描述为一个"体系"。是什么使它成为一个体系，而不仅仅是一系列单独的旅程？",
+              aEn: "A system means that each part depends on the others. British factories produced goods for Africa. African captives provided labour for American plantations. Plantation products generated wealth back in Britain, which funded more ships and more trade goods. Remove any one stage and the whole cycle would break down. This is what made the slave trade so difficult to stop — it was not one person or one ship, but a self-reinforcing loop across three continents.",
+              aZh: "一个体系意味着每个部分都依赖于其他部分。英国工厂为非洲生产商品。非洲俘虏为美洲种植园提供劳动力。种植园产品在英国创造财富，资助更多船只和更多贸易商品。去掉任何一个阶段，整个循环就会崩溃。这就是奴隶贸易如此难以阻止的原因——它不是一个人或一艘船，而是横跨三个大陆的自我强化循环。",
+            },
+            {
+              qEn: "British sugar consumption was about 5.5 kilos per person per year by around 1800. What does this tell us about the connection between everyday life in Britain and the slave trade?",
+              qZh: "到1800年左右，英国人均年糖消费量约为5.5公斤。这告诉我们英国日常生活与奴隶贸易之间有什么联系？",
+              aEn: "It shows that the slave trade was not something happening far away that had nothing to do with ordinary people. The sugar in a British family's tea or food was very likely produced by enslaved people on Caribbean plantations. High demand at home directly drove the need for more enslaved labour abroad. Everyday consumption and distant suffering were linked through the same trading system.",
+              aZh: "这表明奴隶贸易并不是发生在遥远地方、与普通人无关的事情。英国家庭茶或食物中的糖很可能是加勒比种植园上被奴役的人生产的。国内的高需求直接推动了对海外更多奴隶劳动力的需求。日常消费和遥远的苦难通过同一个贸易体系联系在一起。",
+            },
+          ],
+        },
+        {
+          type: "quiz",
+          qEn: "What was carried on each stage of the triangular trade?",
+          qZh: "三角贸易的每个阶段分别运载了什么？",
+          opts: [
+            {
+              en: "Stage 1: enslaved Africans → Stage 2: sugar and tobacco → Stage 3: manufactured goods",
+              zh: "第一阶段：被奴役的非洲人 → 第二阶段：糖和烟草 → 第三阶段：制成品",
+            },
+            {
+              en: "Stage 1: manufactured goods → Stage 2: enslaved Africans → Stage 3: plantation products",
+              zh: "第一阶段：制成品 → 第二阶段：被奴役的非洲人 → 第三阶段：种植园产品",
+            },
+            {
+              en: "Stage 1: gold and ivory → Stage 2: European settlers → Stage 3: weapons",
+              zh: "第一阶段：黄金和象牙 → 第二阶段：欧洲定居者 → 第三阶段：武器",
+            },
+            {
+              en: "Stage 1: plantation products → Stage 2: manufactured goods → Stage 3: enslaved Africans",
+              zh: "第一阶段：种植园产品 → 第二阶段：制成品 → 第三阶段：被奴役的非洲人",
+            },
+          ],
+          correct: 1,
+          explainCorrectEn:
+            "Stage 1 carried manufactured goods (cloth, metal, guns, alcohol) from Britain to West Africa. Stage 2 — the Middle Passage — carried enslaved Africans across the Atlantic to the Americas. Stage 3 carried plantation products (sugar, tobacco, coffee) back to Britain. Traders made profit at every stage.",
+          explainCorrectZh:
+            "第一阶段将制成品（布料、金属、枪支、酒精）从英国运到西非。第二阶段——中间航程——将被奴役的非洲人运过大西洋到美洲。第三阶段将种植园产品（糖、烟草、咖啡）运回英国。贸易商在每个阶段都获利。",
+          explainWrongEn:
+            "The correct answer is B. The triangular trade started with manufactured goods shipped from Britain to West Africa (Stage 1), then enslaved Africans were forced across the Atlantic on the Middle Passage (Stage 2), and finally plantation products like sugar and tobacco were shipped back to Britain (Stage 3). About 80,000 Africans were taken across the Atlantic each year.",
+          explainWrongZh:
+            "正确答案是B。三角贸易从英国向西非运送制成品开始（第一阶段），然后被奴役的非洲人在中间航程中被迫横渡大西洋（第二阶段），最后糖和烟草等种植园产品被运回英国（第三阶段）。每年约有80,000名非洲人被运过大西洋。",
+        },
+      ],
     },
 
     /* ========== Lesson 3 (placeholder) ========== */

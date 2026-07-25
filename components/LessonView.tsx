@@ -30,17 +30,17 @@ export default function LessonView({ lesson, lang, totalLessons }: Props) {
         />
       </div>
 
-      <div className="max-w-[720px] mx-auto px-8 py-8">
+      <div className="max-w-[740px] mx-auto px-8 py-8">
         {/* Lesson header */}
-        <div className="text-[11px] text-gray-400 uppercase tracking-wider mb-1">
+        <div className="text-[12px] text-gray-500 uppercase tracking-wider mb-1">
           Lesson {lesson.num} · {t(lang, labels.difficulty.en, labels.difficulty.zh)}{" "}
           {lesson.badge}
         </div>
-        <h1 className="text-[22px] font-semibold text-gray-900 leading-tight">
+        <h1 className="text-[24px] font-semibold text-gray-100 leading-tight">
           {t(lang, lesson.title, lesson.titleZh)}
         </h1>
         {lesson.subtitle && (
-          <p className="text-[14px] text-gray-500 mt-1.5 leading-relaxed">
+          <p className="text-[15px] text-gray-400 mt-1.5 leading-relaxed">
             {t(lang, lesson.subtitle, lesson.subtitleZh)}
           </p>
         )}
@@ -72,10 +72,9 @@ export default function LessonView({ lesson, lang, totalLessons }: Props) {
             })}
           </div>
         ) : (
-          /* Coming soon placeholder */
           <div className="flex flex-col items-center justify-center h-[300px] gap-3 mt-8">
-            <span className="text-3xl text-gray-300">📄</span>
-            <p className="text-[14px] text-gray-400">
+            <span className="text-3xl text-gray-600">📄</span>
+            <p className="text-[15px] text-gray-500">
               {t(lang, labels.comingSoon.en, labels.comingSoon.zh)}
             </p>
           </div>

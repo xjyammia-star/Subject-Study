@@ -11,11 +11,11 @@ interface Props {
 export default function ImagePlaceholder({ section, lang }: Props) {
   return (
     <div className="bg-surface-2 border border-border rounded-lg flex flex-col items-center justify-center py-12 gap-2">
-      <span className="text-2xl text-gray-400">🖼️</span>
-      <span className="text-[13px] text-gray-600">
+      <span className="text-2xl text-gray-600">🖼️</span>
+      <span className="text-[14px] text-gray-400">
         {t(lang, section.caption, section.captionZh)}
       </span>
-      <span className="text-[10px] text-gray-400">{section.source}</span>
+      <span className="text-[11px] text-gray-600">{section.source}</span>
     </div>
   );
 }

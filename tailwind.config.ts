@@ -9,40 +9,41 @@ const config: Config = {
     extend: {
       colors: {
         surface: {
-          0: "#ffffff",
-          1: "#f8f9fa",
-          2: "#f0f1f3",
+          0: "#0f1117",   // main background — deep dark
+          1: "#161923",   // sidebar background
+          2: "#1e2231",   // hover / secondary panels
+          3: "#252a3a",   // card background
         },
         border: {
-          DEFAULT: "#e2e4e8",
-          accent: "#6366f1",
+          DEFAULT: "#2a2f40",
+          accent: "#818cf8",
         },
         accent: {
-          DEFAULT: "#6366f1",
-          light: "#eef2ff",
+          DEFAULT: "#818cf8",
+          light: "rgba(129,140,248,0.12)",
         },
         success: {
-          bg: "#ecfdf5",
-          border: "#6ee7b7",
-          text: "#065f46",
+          bg: "rgba(16,185,129,0.12)",
+          border: "#34d399",
+          text: "#6ee7b7",
         },
         danger: {
-          bg: "#fef2f2",
-          border: "#fca5a5",
-          text: "#991b1b",
+          bg: "rgba(239,68,68,0.12)",
+          border: "#f87171",
+          text: "#fca5a5",
         },
         source: {
-          bg: "#f5f3ff",
-          border: "#c4b5fd",
-          text: "#5b21b6",
+          bg: "rgba(139,92,246,0.10)",
+          border: "#8b5cf6",
+          text: "#c4b5fd",
         },
         highlight: {
-          bg: "#fffbeb",
-          border: "#fcd34d",
+          bg: "rgba(251,191,36,0.10)",
+          border: "#f59e0b",
         },
         example: {
-          bg: "#f0fdf4",
-          border: "#86efac",
+          bg: "rgba(16,185,129,0.08)",
+          border: "#34d399",
         },
       },
       fontFamily: {

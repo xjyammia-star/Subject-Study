@@ -11,7 +11,7 @@ interface Props {
 export default function Vocab({ section, lang }: Props) {
   return (
     <div>
-      <div className="flex items-center gap-1.5 text-[11px] font-medium text-gray-400 uppercase tracking-wider mb-3">
+      <div className="flex items-center gap-1.5 text-[12px] font-medium text-gray-500 uppercase tracking-wider mb-3">
         <span>📝</span>
         {t(lang, labels.keyVocabulary.en, labels.keyVocabulary.zh)}
       </div>
@@ -19,12 +19,12 @@ export default function Vocab({ section, lang }: Props) {
         {section.words.map((word, i) => (
           <div
             key={i}
-            className="bg-white border border-border rounded-lg p-4"
+            className="bg-surface-3 border border-border rounded-lg p-4"
           >
-            <div className="text-[14px] font-medium text-gray-900">
+            <div className="text-[15px] font-medium text-gray-100">
               {t(lang, word.en, word.zh)}
             </div>
-            <div className="text-[13px] text-gray-500 mt-1 leading-relaxed">
+            <div className="text-[14px] text-gray-400 mt-1 leading-relaxed">
               {t(lang, word.defEn, word.defZh)}
             </div>
           </div>

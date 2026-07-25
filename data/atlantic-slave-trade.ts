@@ -314,15 +314,160 @@ export const atlanticSlaveTrade: Topic = {
       ],
     },
 
-    /* ========== Lesson 3 (placeholder) ========== */
+    /* ========== Lesson 3 ========== */
     {
       num: 3,
       badge: "T",
       title: "Capture and the journey to the coast",
       titleZh: "捕获与前往海岸的旅程",
-      subtitle: "",
-      subtitleZh: "",
-      sections: [],
+      subtitle:
+        "How people were taken from their homes and what happened before they reached the ships.",
+      subtitleZh:
+        "人们如何从家中被带走，以及在到达船上之前发生了什么。",
+      sections: [
+        {
+          type: "goals",
+          items: [
+            {
+              en: "I can describe how people in Africa were captured and taken to the coast.",
+              zh: "我能描述非洲人是如何被捕获并被带到海岸的。",
+            },
+            {
+              en: "I can explain the role of both Europeans and some African rulers in the capture process.",
+              zh: "我能解释欧洲人和一些非洲统治者在捕获过程中的角色。",
+            },
+            {
+              en: "I can describe conditions in the barracoons at the coast.",
+              zh: "我能描述海岸奴隶围栏中的条件。",
+            },
+          ],
+        },
+        {
+          type: "intro",
+          content: [
+            {
+              type: "text",
+              en: "Anyone who could be captured might become a slave. Sometimes captives were prisoners of war, but often they were ordinary people who were kidnapped from their daily lives. Europeans usually did not carry out the capture themselves. Instead, they paid Africans to capture others.",
+              zh: "任何能被捕获的人都可能成为奴隶。有时俘虏是战俘，但更多时候他们是在日常生活中被绑架的普通人。欧洲人通常不亲自执行捕获行动。相反，他们付钱让非洲人去捕获其他人。",
+            },
+            {
+              type: "highlight",
+              en: "Some powerful African rulers sold neighbouring peoples in exchange for wealth, guns, and gunpowder. This arms trade encouraged more conflict between communities, which in turn produced more captives for the slave trade.",
+              zh: "一些强大的非洲统治者出卖邻近的民族以换取财富、枪支和火药。这种武器贸易鼓励了社区之间更多的冲突，而冲突反过来又为奴隶贸易产生了更多的俘虏。",
+            },
+            {
+              type: "text",
+              en: "After capture, people were forced to march for weeks or even months to reach the coast. When they arrived, they were imprisoned in holding areas called barracoons. Many people were crowded together \u2014 men, women, boys, and girls could all be kept in the same place. They were held there for long periods until merchants inspected them and chose some to board ships.",
+              zh: "被捕获后，人们被迫行走数周甚至数月才能到达海岸。到达后，他们被关押在称为奴隶围栏（barracoons）的拘留区。许多人被挤在一起\u2014\u2014男人、女人、男孩和女孩都可能被关在同一个地方。他们在那里被长期关押，直到商人来检查他们并挑选一些人上船。",
+            },
+            {
+              type: "text",
+              en: "The materials also describe that enslaved Africans were held in dungeons in coastal forts until a ship was ready to take them to America. British traders traded their goods to African chiefs, who offered them men, women, and children who had been kidnapped by slave traders or bought from other chiefs.",
+              zh: "材料还描述了被奴役的非洲人被关在海岸堡垒的地牢中，直到一艘船准备好将他们带到美洲。英国贸易商将他们的商品与非洲酋长交易，酋长们提供被奴隶贩子绑架或从其他酋长那里购买的男人、女人和儿童。",
+            },
+            {
+              type: "example",
+              en: "Try to picture being taken from your home with no warning, forced to walk for months through unfamiliar lands, and then locked in a crowded holding area with no idea what would happen next. This was the reality for millions of people before they ever saw a ship.",
+              zh: "试着想象一下，毫无预警地从家中被带走，被迫在陌生的土地上行走数月，然后被锁在拥挤的拘留区里，完全不知道接下来会发生什么。这就是数百万人在看到船只之前的真实经历。",
+            },
+          ],
+        },
+        {
+          type: "vocab",
+          words: [
+            {
+              en: "Barracoon",
+              zh: "奴隶围栏",
+              defEn:
+                "A holding area or enclosure at the coast where captured Africans were imprisoned before being loaded onto slave ships.",
+              defZh: "海岸上的拘留区或围栏，被捕获的非洲人在被装上奴隶船之前被关押在此。",
+            },
+            {
+              en: "Kidnapping",
+              zh: "绑架",
+              defEn:
+                "Taking a person away by force against their will \u2014 a common method used to capture people for the slave trade.",
+              defZh: "违背某人意愿强行将其带走\u2014\u2014这是用来为奴隶贸易捕获人口的常见方法。",
+            },
+            {
+              en: "Coastal fort",
+              zh: "海岸堡垒",
+              defEn:
+                "A fortified building on the African coast where enslaved people were held in dungeons before being shipped across the Atlantic.",
+              defZh: "非洲海岸上的防御建筑，被奴役的人在被运过大西洋之前被关在其地牢中。",
+            },
+            {
+              en: "Arms trade",
+              zh: "武器贸易",
+              defEn:
+                "The exchange of guns and gunpowder, which encouraged conflict between African communities and produced more captives.",
+              defZh: "枪支和火药的交换，它鼓励了非洲社区之间的冲突并产生了更多俘虏。",
+            },
+          ],
+        },
+        {
+          type: "image",
+          caption: "Coastal slave fort in West Africa \u2014 where captives were held before the voyage",
+          captionZh: "西非海岸奴隶堡垒\u2014\u2014俘虏在航行前被关押的地方",
+          source: "Wikimedia Commons",
+        },
+        {
+          type: "source",
+          labelEn: "A first-person account of capture",
+          labelZh: "一段关于被捕获的第一人称叙述",
+          en: "The video includes a first-person account describing how a child and a sister were grabbed while the adults of the family were working. They were then forced to move through many unfamiliar lands on a march that lasted months before they finally reached the coast. This testimony helps us understand the fear, confusion, and loss that began long before the ships sailed.",
+          zh: "视频中包含一段第一人称叙述，描述了一个孩子和他的姐姐在家人外出工作时被抓走。他们随后被迫穿越许多陌生的土地，进行了持续数月的行军，最终到达海岸。这段证词帮助我们理解在船只起航之前很久就开始的恐惧、困惑和失去。",
+        },
+        {
+          type: "think",
+          questions: [
+            {
+              qEn: "Europeans usually did not capture Africans themselves \u2014 they paid others to do it. Does this make Europeans less responsible for what happened? Why or why not?",
+              qZh: "欧洲人通常不亲自捕获非洲人\u2014\u2014他们付钱让别人去做。这是否使欧洲人对所发生的事情承担更少的责任？为什么？",
+              aEn: "Not capturing people directly does not reduce responsibility. Europeans created the demand and the profit motive that drove the entire system. Without European ships, markets, and money, the large-scale capture would not have happened. Paying someone to commit an act does not remove the moral responsibility of the person who pays for it \u2014 it simply adds another layer to the system.",
+              aZh: "不亲自捕获人口并不减少责任。欧洲人创造了驱动整个系统的需求和利润动机。没有欧洲的船只、市场和资金，大规模的捕获就不会发生。付钱让别人做某事并不能免除付钱者的道德责任\u2014\u2014它只是给这个系统增加了另一层。",
+            },
+            {
+              qEn: "The trade in guns and gunpowder encouraged more conflict between African communities. How did this create a cycle that was hard to break?",
+              qZh: "枪支和火药的贸易鼓励了非洲社区之间更多的冲突。这如何创造了一个难以打破的循环？",
+              aEn: "Communities that received guns became more powerful and could capture more people. But their neighbours then also needed guns to defend themselves \u2014 and to get guns, they had to trade captives. This meant that conflict kept growing, producing more and more enslaved people, which in turn fed the European demand for labour. The cycle was self-reinforcing: more guns meant more war, more war meant more captives, and more captives meant more guns.",
+              aZh: "获得枪支的社区变得更加强大，能够捕获更多的人。但他们的邻居也需要枪支来保卫自己\u2014\u2014而要获得枪支，他们不得不用俘虏来交换。这意味着冲突不断增长，产生越来越多的被奴役者，而这反过来又满足了欧洲人对劳动力的需求。这个循环是自我强化的：更多的枪支意味着更多的战争，更多的战争意味着更多的俘虏，更多的俘虏意味着更多的枪支。",
+            },
+          ],
+        },
+        {
+          type: "quiz",
+          qEn: "How were most people captured for the Atlantic slave trade?",
+          qZh: "大西洋奴隶贸易中大多数人是如何被捕获的？",
+          opts: [
+            {
+              en: "European soldiers raided African villages directly",
+              zh: "欧洲士兵直接袭击非洲村庄",
+            },
+            {
+              en: "Africans volunteered to work on plantations",
+              zh: "非洲人自愿去种植园工作",
+            },
+            {
+              en: "Europeans paid Africans to capture others, and some African rulers sold neighbouring peoples for guns and wealth",
+              zh: "欧洲人付钱让非洲人捕获其他人，一些非洲统治者为了枪支和财富出卖邻近民族",
+            },
+            {
+              en: "African governments organised the capture and transport themselves",
+              zh: "非洲政府自己组织了捕获和运输",
+            },
+          ],
+          correct: 2,
+          explainCorrectEn:
+            "The source materials make clear that Europeans usually did not carry out the capture themselves. Instead, they traded manufactured goods \u2014 including guns and gunpowder \u2014 to African chiefs and traders, who captured people from neighbouring communities through kidnapping and warfare. This created a cycle where the arms trade encouraged more conflict, which produced more captives for the slave trade.",
+          explainCorrectZh:
+            "原始资料清楚表明，欧洲人通常不亲自执行捕获行动。相反，他们将制成品\u2014\u2014包括枪支和火药\u2014\u2014与非洲酋长和商人交易，后者通过绑架和战争从邻近社区捕获人口。这创造了一个循环，武器贸易鼓励了更多冲突，冲突又为奴隶贸易产生了更多俘虏。",
+          explainWrongEn:
+            "The correct answer is C. Europeans usually did not do the capturing themselves. They paid Africans and traded goods such as guns, gunpowder, cloth, and alcohol to African chiefs, who offered them people captured from other communities. The video and classroom materials both describe how ordinary people \u2014 including children \u2014 were kidnapped, then forced to march for months to reach coastal holding areas called barracoons.",
+          explainWrongZh:
+            "正确答案是C。欧洲人通常不亲自捕获人口。他们向非洲酋长支付报酬并交易枪支、火药、布料和酒精等商品，酋长们则提供从其他社区捕获的人。视频和课堂材料都描述了普通人\u2014\u2014包括儿童\u2014\u2014如何被绑架，然后被迫行军数月到达海岸的奴隶围栏。",
+        },
+      ],
     },
 
     /* ========== Lesson 4 (placeholder) ========== */

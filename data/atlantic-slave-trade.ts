@@ -267,7 +267,7 @@ export const atlanticSlaveTrade: Topic = {
           questions: [
             {
               qEn: "The triangular trade is often described as a 'system'. What makes it a system rather than just a series of individual journeys?",
-              qZh: "三角贸易常被描述为一个"体系"。是什么使它成为一个体系，而不仅仅是一系列单独的旅程？",
+              qZh: "三角贸易常被描述为一个「体系」。是什么使它成为一个体系，而不仅仅是一系列单独的旅程？",
               aEn: "A system means that each part depends on the others. British factories produced goods for Africa. African captives provided labour for American plantations. Plantation products generated wealth back in Britain, which funded more ships and more trade goods. Remove any one stage and the whole cycle would break down. This is what made the slave trade so difficult to stop — it was not one person or one ship, but a self-reinforcing loop across three continents.",
               aZh: "一个体系意味着每个部分都依赖于其他部分。英国工厂为非洲生产商品。非洲俘虏为美洲种植园提供劳动力。种植园产品在英国创造财富，资助更多船只和更多贸易商品。去掉任何一个阶段，整个循环就会崩溃。这就是奴隶贸易如此难以阻止的原因——它不是一个人或一艘船，而是横跨三个大陆的自我强化循环。",
             },

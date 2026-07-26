@@ -823,7 +823,7 @@ export const britishEmpire: Topic = {
           caption: "A textbook page asking: 'What have the British ever done for us?' — presenting evidence of claimed imperial benefits in India, Canada, and South Africa",
           captionZh: "\u6559\u79d1\u4e66\u4e00\u9875\u63d0\u95ee\uff1a\u201c\u82f1\u56fd\u4eba\u7a76\u7adf\u4e3a\u6211\u4eec\u505a\u4e86\u4ec0\u4e48\uff1f\u201d\u2014\u2014\u5448\u73b0\u5370\u5ea6\u3001\u52a0\u62ff\u5927\u548c\u5357\u975e\u6240\u8c13\u5e1d\u56fd\u6240\u5e26\u6765\u76ca\u5904\u7684\u8bc1\u636e",
           source: "Classroom materials (Shrewsbury School, Y8 History)",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/The_White_Mans_Burden_Judge_1899.jpg",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Punch_Rhodes_Colossus.png",
         },
         {
           type: "source",

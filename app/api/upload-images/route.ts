@@ -1,117 +1,221 @@
 import { NextResponse } from "next/server";
 import { put } from "@vercel/blob";
 import { sql } from "@vercel/postgres";
-import { LessonSection } from "@/data/types";
+import { atlanticSlaveTrade } from "@/data/atlantic-slave-trade";
+import { britishEmpire } from "@/data/british-empire";
+import { Topic, LessonSection } from "@/data/types";
 
-/** Images to download and upload, keyed by lesson number */
-const imageSources: Record<
-  number,
-  { wikimediaUrl: string; filename: string }
-> = {
-  1: {
-    wikimediaUrl:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Great-Zimbabwe-2.jpg/800px-Great-Zimbabwe-2.jpg",
-    filename: "lesson1-great-zimbabwe.jpg",
-  },
-  2: {
-    wikimediaUrl:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Transatlantic_slave_trade.jpg/800px-Transatlantic_slave_trade.jpg",
-    filename: "lesson2-triangular-trade-map.jpg",
-  },
-  3: {
-    wikimediaUrl:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Elmina_Castle_-_Ghana.jpg/800px-Elmina_Castle_-_Ghana.jpg",
-    filename: "lesson3-elmina-castle.jpg",
-  },
-  4: {
-    wikimediaUrl:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Slaveshipposter.jpg/800px-Slaveshipposter.jpg",
-    filename: "lesson4-brookes-diagram.jpg",
-  },
-  5: {
-    wikimediaUrl:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Noirs_sur_un_rivage_se_lamentant_de_voir_embarquer_d%27autres_noirs_sur_un_bateau%2C_1764.jpg/800px-Noirs_sur_un_rivage_se_lamentant_de_voir_embarquer_d%27autres_noirs_sur_un_bateau%2C_1764.jpg",
-    filename: "lesson5-slave-ship-arrival.jpg",
-  },
-  6: {
-    wikimediaUrl:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Slaves_cutting_the_sugar_cane_-_Ten_Views_in_the_Island_of_Antigua_%281823%29%2C_plate_IV_-_BL.jpg/800px-Slaves_cutting_the_sugar_cane_-_Ten_Views_in_the_Island_of_Antigua_%281823%29%2C_plate_IV_-_BL.jpg",
-    filename: "lesson6-plantation-sugar-cane.jpg",
-  },
+// 每次只处理一张图片，避免超时
+// 用法：
+//   /api/upload-images              → 上传第一张待处理的图片
+//   /api/upload-images?all=1        → 尝试上传所有（可能超时，但会记录进度）
+//   /api/upload-images?status=1     → 查看当前哪些图片已上传，哪些还没
+
+// ─── 收集所有 topic 里的图片信息 ─────────────────────────────────────────────
+
+type ImageTask = {
+  topicSlug: string;
+  lessonNum: number;
+  sourceUrl: string;
+  filename: string;
 };
 
-/** Small delay to avoid Wikimedia rate limiting */
-function sleep(ms: number) {
-  return new Promise((resolve) => setTimeout(resolve, ms));
+function collectImageTasks(topics: Topic[]): ImageTask[] {
+  const tasks: ImageTask[] = [];
+  for (const topic of topics) {
+    for (const lesson of topic.lessons) {
+      for (const section of lesson.sections) {
+        if (section.type === "image" && section.url) {
+          if (
+            section.url.startsWith("/") ||
+            section.url.includes("vercel-storage.com")
+          ) {
+            continue; // skip local paths and already-uploaded
+          }
+          const urlPath = section.url.split("?")[0];
+          const rawExt = urlPath.split(".").pop() ?? "jpg";
+          const ext = ["jpg", "jpeg", "png", "webp", "gif"].includes(
+            rawExt.toLowerCase()
+          )
+            ? rawExt.toLowerCase()
+            : "jpg";
+          tasks.push({
+            topicSlug: topic.slug,
+            lessonNum: lesson.num,
+            sourceUrl: section.url,
+            filename: `${topic.slug}-lesson${lesson.num}.${ext}`,
+          });
+        }
+      }
+    }
+  }
+  return tasks;
 }
 
-export const maxDuration = 60; // allow up to 60s for this route
+// ─── 上传一张图片并更新数据库 ─────────────────────────────────────────────────
 
-export async function GET() {
-  const results: string[] = [];
+async function uploadOne(task: ImageTask): Promise<{
+  ok: boolean;
+  blobUrl?: string;
+  detail: string;
+}> {
+  const res = await fetch(task.sourceUrl, {
+    headers: {
+      "User-Agent":
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      Accept: "image/webp,image/apng,image/*,*/*;q=0.8",
+      Referer: "https://commons.wikimedia.org/",
+    },
+  });
+
+  if (!res.ok) {
+    return { ok: false, detail: `fetch failed: HTTP ${res.status}` };
+  }
+
+  const contentType = res.headers.get("content-type") ?? "image/jpeg";
+  const buffer = await res.arrayBuffer();
+
+  const { url: blobUrl } = await put(task.filename, buffer, {
+    access: "public",
+    contentType,
+    addRandomSuffix: false,
+  });
+
+  // Update sections JSONB in the database: replace this image's url with blob url
+  await sql`
+    UPDATE lessons
+    SET sections = (
+      SELECT jsonb_agg(
+        CASE
+          WHEN elem->>'type' = 'image'
+          THEN jsonb_set(elem, '{url}', ${JSON.stringify(blobUrl)}::jsonb)
+          ELSE elem
+        END
+      )
+      FROM jsonb_array_elements(sections) AS elem
+    )
+    WHERE num = ${task.lessonNum}
+    AND topic_id = (SELECT id FROM topics WHERE slug = ${task.topicSlug})
+  `;
+
+  return {
+    ok: true,
+    blobUrl,
+    detail: `${buffer.byteLength} bytes → ${blobUrl}`,
+  };
+}
+
+// ─── GET /api/upload-images ───────────────────────────────────────────────────
+
+export async function GET(request: Request) {
+  const { searchParams } = new URL(request.url);
+  const showStatus = searchParams.get("status") === "1";
+  const uploadAll = searchParams.get("all") === "1";
+
+  const topics: Topic[] = [atlanticSlaveTrade, britishEmpire];
+  const allTasks = collectImageTasks(topics);
+  const log: string[] = [];
+
+  // ── Status mode: show what's in DB ──
+  if (showStatus) {
+    const results: { topic: string; lesson: number; url: string; isBlob: boolean }[] = [];
+    for (const topic of topics) {
+      const { rows } = await sql`
+        SELECT num, sections FROM lessons
+        WHERE topic_id = (SELECT id FROM topics WHERE slug = ${topic.slug})
+        ORDER BY num
+      `;
+      for (const row of rows) {
+        const sections = row.sections as LessonSection[];
+        for (const s of sections) {
+          if (s.type === "image" && s.url) {
+            results.push({
+              topic: topic.slug,
+              lesson: row.num,
+              url: s.url,
+              isBlob: s.url.includes("vercel-storage.com"),
+            });
+          }
+        }
+      }
+    }
+    const done = results.filter((r) => r.isBlob).length;
+    const total = results.length;
+    return NextResponse.json({
+      summary: `${done}/${total} images uploaded to Blob`,
+      images: results,
+    });
+  }
+
+  // ── Upload mode ──
+  if (uploadAll) {
+    // Try all tasks — may timeout on Hobby plan but will log progress
+    for (const task of allTasks) {
+      log.push(`\nProcessing: ${task.filename}`);
+      try {
+        const result = await uploadOne(task);
+        log.push(result.ok ? `  ✓ ${result.detail}` : `  ✗ ${result.detail}`);
+      } catch (err) {
+        const msg = err instanceof Error ? err.message : String(err);
+        log.push(`  ✗ error: ${msg}`);
+      }
+    }
+    return NextResponse.json({ success: true, log });
+  }
+
+  // ── Default: upload ONE image (first pending) ──
+  // Check which images are not yet on Blob by querying DB
+  const pendingTasks: ImageTask[] = [];
+  for (const topic of topics) {
+    const { rows } = await sql`
+      SELECT num, sections FROM lessons
+      WHERE topic_id = (SELECT id FROM topics WHERE slug = ${topic.slug})
+      ORDER BY num
+    `;
+    for (const row of rows) {
+      const sections = row.sections as LessonSection[];
+      for (const s of sections) {
+        if (
+          s.type === "image" &&
+          s.url &&
+          !s.url.includes("vercel-storage.com") &&
+          !s.url.startsWith("/")
+        ) {
+          const match = allTasks.find(
+            (t) => t.topicSlug === topic.slug && t.lessonNum === row.num
+          );
+          if (match) pendingTasks.push(match);
+        }
+      }
+    }
+  }
+
+  if (pendingTasks.length === 0) {
+    return NextResponse.json({
+      success: true,
+      message: "All images already uploaded to Blob!",
+      remaining: 0,
+    });
+  }
+
+  const task = pendingTasks[0];
+  log.push(`Uploading: ${task.filename}`);
+  log.push(`Source: ${task.sourceUrl}`);
 
   try {
-    for (const [lessonNumStr, source] of Object.entries(imageSources)) {
-      const lessonNum = Number(lessonNumStr);
-
-      // 1. Download image from Wikimedia with proper User-Agent
-      const response = await fetch(source.wikimediaUrl, {
-        headers: {
-          "User-Agent":
-            "HistoryStudyTool/1.0 (educational project; contact: student@example.com)",
-        },
-      });
-
-      if (!response.ok) {
-        results.push(
-          `Lesson ${lessonNum}: download failed (${response.status})`
-        );
-        await sleep(2000);
-        continue;
-      }
-
-      const imageBuffer = await response.arrayBuffer();
-
-      // 2. Upload to Vercel Blob
-      const blob = await put(
-        `images/atlantic-slave-trade/${source.filename}`,
-        Buffer.from(imageBuffer),
-        { access: "public" }
-      );
-
-      // 3. Update the lesson sections in DB with the Blob URL
-      const { rows } = await sql`
-        SELECT id, sections FROM lessons
-        WHERE num = ${lessonNum}
-        AND topic_id IN (SELECT id FROM topics WHERE slug = 'atlantic-slave-trade')
-      `;
-
-      if (rows.length > 0) {
-        const sections = rows[0].sections as LessonSection[];
-        const updated = sections.map((s) => {
-          if (s.type === "image") {
-            return { ...s, url: blob.url };
-          }
-          return s;
-        });
-        const sectionsJson = JSON.stringify(updated);
-        await sql`
-          UPDATE lessons SET sections = ${sectionsJson}::jsonb
-          WHERE id = ${rows[0].id}
-        `;
-      }
-
-      results.push(`Lesson ${lessonNum}: OK -> ${blob.url}`);
-
-      // Wait 2 seconds before next download
-      await sleep(2000);
-    }
-
-    return NextResponse.json({ success: true, results });
-  } catch (error: unknown) {
-    const message = error instanceof Error ? error.message : "Unknown error";
+    const result = await uploadOne(task);
+    return NextResponse.json({
+      success: result.ok,
+      filename: task.filename,
+      blobUrl: result.blobUrl,
+      detail: result.detail,
+      remaining: pendingTasks.length - 1,
+      log,
+    });
+  } catch (err) {
+    const msg = err instanceof Error ? err.message : String(err);
     return NextResponse.json(
-      { success: false, error: message, results },
+      { success: false, error: msg, filename: task.filename, log },
       { status: 500 }
     );
   }

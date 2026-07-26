@@ -93,7 +93,7 @@ export const britishEmpire: Topic = {
           caption: "A map of the British Empire in 1886, shown in red — it covered roughly a quarter of the world's land surface",
           captionZh: "1886 \u5e74\u7684\u5927\u82f1\u5e1d\u56fd\u5730\u56fe\uff0c\u7ea2\u8272\u90e8\u5206\u5360\u5730\u7403\u9646\u5730\u9762\u79ef\u7684\u7ea6\u56db\u5206\u4e4b\u4e00",
           source: "Wikimedia Commons (Public Domain)",
-          url: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/British_Empire_1897.jpg/1280px-British_Empire_1897.jpg",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/British_Empire_1897.jpg",
         },
         {
           type: "source",
@@ -243,7 +243,7 @@ export const britishEmpire: Topic = {
           caption: "British goods and trade networks stretched across every continent — empire created enormous economic opportunities for Britain",
           captionZh: "\u82f1\u56fd\u5546\u54c1\u548c\u8d38\u6613\u7f51\u7edc\u5ef6\u4f38\u81f3\u6bcf\u4e2a\u5927\u6d32\u2014\u2014\u5e1d\u56fd\u4e3a\u82f1\u56fd\u521b\u9020\u4e86\u5de8\u5927\u7684\u7ecf\u6d4e\u673a\u9047",
           source: "Wikimedia Commons (Public Domain)",
-          url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Royal_Exchange_London_1886.jpg/1024px-Royal_Exchange_London_1886.jpg",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Royal_Exchange_London_1886.jpg",
         },
         {
           type: "source",
@@ -388,7 +388,7 @@ export const britishEmpire: Topic = {
           caption: "The 1886 Imperial Federation Map — all British territories shown in red, produced to celebrate Queen Victoria's Jubilee",
           captionZh: "1886 \u5e74\u5e1d\u56fd\u8054\u90a6\u5730\u56fe\u2014\u2014\u6240\u6709\u82f1\u56fd\u9886\u571f\u6807\u8bc6\u4e3a\u7ea2\u8272\uff0c\u4e3a\u5e86\u795d\u7ef4\u591a\u5229\u4e9a\u5973\u738b\u79cd\u5e74\u800c\u5236\u4f5c",
           source: "Wikimedia Commons (Public Domain)",
-          url: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Imperial_Federation%2C_Map_of_the_World_Showing_the_Extent_of_the_British_Empire_in_1886_%28levelled%29.jpg/1280px-Imperial_Federation%2C_Map_of_the_World_Showing_the_Extent_of_the_British_Empire_in_1886_%28levelled%29.jpg",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Imperial_Federation,_Map_of_the_World_Showing_the_Extent_of_the_British_Empire_in_1886_(levelled).jpg",
         },
         {
           type: "source",
@@ -533,7 +533,7 @@ export const britishEmpire: Topic = {
           caption: "British soldiers and administrators governed vast territories — but local cooperation was essential to make empire work",
           captionZh: "\u82f1\u56fd\u58eb\u5175\u548c\u884c\u653f\u5b98\u5458\u7ba1\u7406\u7740\u5e7f\u9614\u7684\u9886\u571f\u2014\u2014\u4f46\u5f53\u5730\u5408\u4f5c\u5bf9\u5e1d\u56fd\u8fd0\u8f6c\u81f3\u5173\u91cd\u8981",
           source: "Wikimedia Commons (Public Domain)",
-          url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/British_troops_Boer_War.jpg/1024px-British_troops_Boer_War.jpg",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/British_troops_Boer_War.jpg",
         },
         {
           type: "source",
@@ -678,7 +678,7 @@ export const britishEmpire: Topic = {
           caption: "Queen Victoria's 1887 Jubilee plate — celebrating empire with trade figures, maps, and images of colonies as a source of national pride",
           captionZh: "\u7ef4\u591a\u5229\u4e9a\u5973\u738b 1887 \u5e74\u79cd\u5e74\u7eaa\u5ff5\u76d8\u2014\u2014\u7528\u8d38\u6613\u6570\u636e\u3001\u5730\u56fe\u548c\u6b96\u6c11\u5730\u56fe\u50cf\u5e86\u795d\u5e1d\u56fd\uff0c\u4f5c\u4e3a\u6c11\u65cf\u81ea\u8c6a\u7684\u6765\u6e90",
           source: "Wikimedia Commons (Public Domain)",
-          url: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Queen_Victoria_Golden_Jubilee_1887.jpg/800px-Queen_Victoria_Golden_Jubilee_1887.jpg",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Queen_Victoria_Golden_Jubilee_1887.jpg",
         },
         {
           type: "source",
@@ -823,7 +823,7 @@ export const britishEmpire: Topic = {
           caption: "A textbook page asking: 'What have the British ever done for us?' — presenting evidence of claimed imperial benefits in India, Canada, and South Africa",
           captionZh: "\u6559\u79d1\u4e66\u4e00\u9875\u63d0\u95ee\uff1a\u201c\u82f1\u56fd\u4eba\u7a76\u7adf\u4e3a\u6211\u4eec\u505a\u4e86\u4ec0\u4e48\uff1f\u201d\u2014\u2014\u5448\u73b0\u5370\u5ea6\u3001\u52a0\u62ff\u5927\u548c\u5357\u975e\u6240\u8c13\u5e1d\u56fd\u6240\u5e26\u6765\u76ca\u5904\u7684\u8bc1\u636e",
           source: "Classroom materials (Shrewsbury School, Y8 History)",
-          url: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/The_White_Mans_Burden_Judge_1899.jpg/800px-The_White_Mans_Burden_Judge_1899.jpg",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/The_White_Mans_Burden_Judge_1899.jpg",
         },
         {
           type: "source",
@@ -968,7 +968,7 @@ export const britishEmpire: Topic = {
           caption: "Historians Terry Deary, Ernest May, Richard Gott, and Niall Ferguson all reach different conclusions from the same historical evidence",
           captionZh: "\u5386\u53f2\u5b66\u5bb6\u7279\u91cc\u00b7\u5fb7\u96f7\u91cc\u3001\u6b27\u7eb3\u65af\u7279\u00b7\u6885\u3001\u7406\u67e5\u5fb7\u00b7\u6208\u7279\u548c\u5c3c\u5c14\u00b7\u8d39\u6d1b\u68ee\u5bf9\u540c\u4e00\u5386\u53f2\u8bc1\u636e\u5f97\u51fa\u4e86\u4e0d\u540c\u7684\u7ed3\u8bba",
           source: "Classroom materials (Shrewsbury School, Y8 History)",
-          url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/University_of_Oxford_crest.svg/800px-University_of_Oxford_crest.svg.png",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Encyclopedie_de_Diderot_-_planche_Histoire.jpg",
         },
         {
           type: "source",

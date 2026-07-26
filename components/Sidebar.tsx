@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { Topic } from "@/data/types";
 import { Lang, t, labels } from "@/lib/i18n";
 import LanguageToggle from "./LanguageToggle";
@@ -29,6 +30,27 @@ export default function Sidebar({
     <div className="w-[268px] min-w-[268px] bg-surface-1 border-r border-border flex flex-col overflow-hidden">
       {/* Header */}
       <div className="p-4 border-b border-border">
+        {/* Back to topics link */}
+        <Link
+          href="/"
+          className="flex items-center gap-1 text-[11px] text-gray-500 hover:text-gray-300 transition-colors mb-3 group"
+        >
+          <svg
+            className="w-3 h-3 group-hover:-translate-x-0.5 transition-transform"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth={2}
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M15 19l-7-7 7-7"
+            />
+          </svg>
+          All topics
+        </Link>
+
         <div className="text-[12px] font-medium text-gray-500 uppercase tracking-wider">
           {topic.year} · {t(lang, topic.subject, topic.subjectZh)}
         </div>
@@ -36,7 +58,8 @@ export default function Sidebar({
           {t(lang, topic.name, topic.nameZh)}
         </div>
         <div className="text-[12px] text-gray-500 mt-0.5">
-          {topic.lessons.length} {t(lang, labels.lessons.en, labels.lessons.zh).toLowerCase()}
+          {topic.lessons.length}{" "}
+          {t(lang, labels.lessons.en, labels.lessons.zh).toLowerCase()}
         </div>
         <LanguageToggle lang={lang} onToggle={onToggleLang} />
       </div>

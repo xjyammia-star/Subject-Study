@@ -2,11 +2,8 @@ import { NextResponse } from "next/server";
 import { createTables, insertTopic, insertLesson } from "@/lib/db";
 import { atlanticSlaveTrade } from "@/data/atlantic-slave-trade";
 import { britishEmpire } from "@/data/british-empire";
+import { usCivilRights } from "@/data/us-civil-rights";
 import { Topic } from "@/data/types";
-
-// GET /api/seed
-// 只负责写入文字内容到数据库，图片 URL 先保留 Wikimedia 原始链接。
-// 图片上传用 /api/upload-image?topic=xxx&lesson=N 逐张处理。
 
 async function seedTopic(topic: Topic, log: string[]): Promise<void> {
   log.push(`\n── ${topic.name} ──`);
@@ -26,14 +23,14 @@ export async function GET() {
     await createTables();
     log.push("Tables ready.");
 
-    const topics: Topic[] = [atlanticSlaveTrade, britishEmpire];
+    const topics: Topic[] = [atlanticSlaveTrade, britishEmpire, usCivilRights];
 
     for (const topic of topics) {
       await seedTopic(topic, log);
     }
 
     log.push("\n=== Seed complete ===");
-    log.push("\nNext step: visit /api/upload-images to upload images to Blob.");
+    log.push("Next: visit /api/upload-images to upload images to Blob.");
 
     return NextResponse.json({ success: true, log });
   } catch (error: unknown) {

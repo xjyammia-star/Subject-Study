@@ -64,7 +64,7 @@ export const usCivilRights: Topic = {
           caption: "Segregated facilities were a daily reality across the American South — signs like these enforced the separation of Black and white Americans",
           captionZh: "\u9694\u79bb\u8bbe\u65bd\u662f\u7f8e\u56fd\u5357\u65b9\u65e5\u5e38\u751f\u6d3b\u7684\u73b0\u5b9e\u2014\u2014\u7c7b\u4f3c\u8fd9\u6837\u7684\u6807\u724c\u5f3a\u5236\u9694\u79bb\u9ed1\u767d\u7f8e\u56fd\u4eba",
           source: "Wikimedia Commons (Public Domain)",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Colored_entrance.jpg",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Colored_drinking_fountain_on_the_county_courthouse_lawn,_Halifax,_North_Carolina.jpg",
         },
         {
           type: "source",
@@ -164,7 +164,7 @@ export const usCivilRights: Topic = {
           caption: "Thurgood Marshall (centre) and NAACP lawyers outside the Supreme Court after the Brown v. Board ruling, 1954",
           captionZh: "\u745f\u826f\u5fb7\u00b7\u9a6c\u6b47\u5c14\uff08\u4e2d\uff09\u548c NAACP \u5f8b\u5e08\u4e8e 1954 \u5e74\u5e03\u6717\u6848\u88c1\u51b3\u540e\u5728\u6700\u9ad8\u6cd5\u9662\u5916\u5090",
           source: "Wikimedia Commons (Public Domain)",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Thurgood_Marshall_1957.jpg",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Thurgood_Marshall,_First_African-American_Supreme_Court_Justice.jpg",
         },
         {
           type: "source",
@@ -264,7 +264,7 @@ export const usCivilRights: Topic = {
           caption: "Martin Luther King Jr. and Rosa Parks — two of the most important figures of the Montgomery Bus Boycott",
           captionZh: "\u9a6c\u4e01\u00b7\u8def\u5fb7\u00b7\u91d1\u535a\u58eb\u4e0e\u7f57\u838e\u00b7\u5e15\u514b\u65af\u2014\u2014\u8499\u54e5\u9a6c\u5229\u516c\u5171\u6c7d\u8f66\u629a\u5236\u8fd0\u52a8\u4e2d\u6700\u91cd\u8981\u7684\u4e24\u4e2a\u4eba\u7269",
           source: "Wikimedia Commons (Public Domain)",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Rosa_Parks_and_Martin_Luther_King_Jr.jpg",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Rosa_parks_bus.jpg",
         },
         {
           type: "source",
@@ -364,7 +364,7 @@ export const usCivilRights: Topic = {
           caption: "A Greyhound bus burned by attackers in Anniston, Alabama, 1961 — images like this turned national opinion against segregation",
           captionZh: "1961 \u5e74\u963f\u62c9\u5df4\u9a6c\u5dde\u5b89\u5185\u65af\u987f\u88ad\u51fb\u8005\u70e7\u6bc1\u7684\u7070\u72d7\u5eba\u8f66\u2014\u2014\u8fd9\u6837\u7684\u56fe\u50cf\u4f7f\u5168\u56fd\u6c11\u610f\u8f6c\u800c\u53cd\u5bf9\u9694\u79bb\u5236\u5ea6",
           source: "Wikimedia Commons (Public Domain)",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Anniston_bus_attack.jpg",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Anniston_bus_burning.jpg",
         },
         {
           type: "source",
@@ -464,7 +464,7 @@ export const usCivilRights: Topic = {
           caption: "The March on Washington, 28 August 1963 — over 250,000 people gathered at the Lincoln Memorial, where Martin Luther King Jr. delivered 'I Have a Dream'",
           captionZh: "1963 \u5e74 8 \u6708 28 \u65e5\u534e\u76db\u987f\u6e38\u884c\u2014\u2014\u8d85\u8fc7 25 \u4e07\u4eba\u805a\u96c6\u4e8e\u6797\u80af\u7eaa\u5ff5\u5802\uff0c\u9a6c\u4e01\u00b7\u8def\u5fb7\u00b7\u91d1\u535a\u58eb\u5728\u6b64\u53d1\u8868\u201c\u6211\u6709\u4e00\u4e2a\u68a6\u60f3\u201d\u6f14\u8bb2",
           source: "Wikimedia Commons (Public Domain)",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/March_on_Washington_edit.jpg",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/March_on_Washington.jpg",
         },
         {
           type: "source",
@@ -564,7 +564,7 @@ export const usCivilRights: Topic = {
           caption: "A graph from the classroom showing civil rights events ranked by significance — your task is to judge where each event should sit",
           captionZh: "\u8bfe\u5ba4\u4e2d\u5c55\u793a\u6c11\u6743\u4e8b\u4ef6\u91cd\u8981\u6027\u6392\u540d\u7684\u56fe\u8868\u2014\u2014\u4f60\u7684\u4efb\u52a1\u662f\u5224\u65ad\u6bcf\u4e2a\u4e8b\u4ef6\u5e94\u5904\u4e8e\u54ea\u4e2a\u4f4d\u7f6e",
           source: "Classroom materials (Shrewsbury School, Y8 History)",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Civil_rights_movement_Washington_1963.jpg",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Martin_Luther_King,_Jr..jpg",
         },
         {
           type: "source",

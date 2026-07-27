@@ -364,7 +364,7 @@ export const usCivilRights: Topic = {
           caption: "A Greyhound bus burned by attackers in Anniston, Alabama, 1961 — images like this turned national opinion against segregation",
           captionZh: "1961 \u5e74\u963f\u62c9\u5df4\u9a6c\u5dde\u5b89\u5185\u65af\u987f\u88ad\u51fb\u8005\u70e7\u6bc1\u7684\u7070\u72d7\u5eba\u8f66\u2014\u2014\u8fd9\u6837\u7684\u56fe\u50cf\u4f7f\u5168\u56fd\u6c11\u610f\u8f6c\u800c\u53cd\u5bf9\u9694\u79bb\u5236\u5ea6",
           source: "Wikimedia Commons (Public Domain)",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Anniston_bus_burning.jpg",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Greensboro_sit-in_counter.jpg",
         },
         {
           type: "source",

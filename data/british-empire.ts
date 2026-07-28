@@ -968,7 +968,7 @@ export const britishEmpire: Topic = {
           caption: "Historians Terry Deary, Ernest May, Richard Gott, and Niall Ferguson all reach different conclusions from the same historical evidence",
           captionZh: "\u5386\u53f2\u5b66\u5bb6\u7279\u91cc\u00b7\u5fb7\u96f7\u91cc\u3001\u6b27\u7eb3\u65af\u7279\u00b7\u6885\u3001\u7406\u67e5\u5fb7\u00b7\u6208\u7279\u548c\u5c3c\u5c14\u00b7\u8d39\u6d1b\u68ee\u5bf9\u540c\u4e00\u5386\u53f2\u8bc1\u636e\u5f97\u51fa\u4e86\u4e0d\u540c\u7684\u7ed3\u8bba",
           source: "Classroom materials (Shrewsbury School, Y8 History)",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/The_Second_Boer_War,_1899-1902_Q72472.jpg",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Mafikeng_Second_Boer_War.jpg",
         },
         {
           type: "source",

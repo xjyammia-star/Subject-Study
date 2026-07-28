@@ -481,7 +481,7 @@ export const humanRights: Topic = {
         {
           type: "image",
           caption: "An illustration depicting the inspection and sale of enslaved people in the Americas",
-          captionZh: "\u4e00\u5e45\u63cf\u7ed8\u7f8e\u6d32\u5974\u96b6\u68c0\u67e5\u4e0e\u8d2d\u5356\u573a\u666f\u7684\u63d2\u56fe",
+          captionZh: "\u4e00\u5e45\u63cf\u7ed8\u88ab\u5974\u5f79\u8005\u5728\u7f8e\u6d32\u62cd\u5356\u4f1a\u4e0a\u88ab\u51fa\u552e\u7684\u63d2\u56fe",
           source: "Wikimedia Commons",
           wikimediaFile: "The_inspection_and_sale_of_a_slave.jpg",
         },

@@ -64,7 +64,7 @@ export const usCivilRights: Topic = {
           caption: "Segregated facilities were a daily reality across the American South — signs like these enforced the separation of Black and white Americans",
           captionZh: "\u9694\u79bb\u8bbe\u65bd\u662f\u7f8e\u56fd\u5357\u65b9\u65e5\u5e38\u751f\u6d3b\u7684\u73b0\u5b9e\u2014\u2014\u7c7b\u4f3c\u8fd9\u6837\u7684\u6807\u724c\u5f3a\u5236\u9694\u79bb\u9ed1\u767d\u7f8e\u56fd\u4eba",
           source: "Wikimedia Commons (Public Domain)",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Colored_drinking_fountain_on_the_county_courthouse_lawn,_Halifax,_North_Carolina.jpg",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Segregation_1938.jpg",
         },
         {
           type: "source",
@@ -164,7 +164,7 @@ export const usCivilRights: Topic = {
           caption: "Thurgood Marshall (centre) and NAACP lawyers outside the Supreme Court after the Brown v. Board ruling, 1954",
           captionZh: "\u745f\u826f\u5fb7\u00b7\u9a6c\u6b47\u5c14\uff08\u4e2d\uff09\u548c NAACP \u5f8b\u5e08\u4e8e 1954 \u5e74\u5e03\u6717\u6848\u88c1\u51b3\u540e\u5728\u6700\u9ad8\u6cd5\u9662\u5916\u5090",
           source: "Wikimedia Commons (Public Domain)",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Thurgood_Marshall,_First_African-American_Supreme_Court_Justice.jpg",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Thurgood_Marshall_by_Yoichi_Okamoto.jpg",
         },
         {
           type: "source",
@@ -564,7 +564,7 @@ export const usCivilRights: Topic = {
           caption: "A graph from the classroom showing civil rights events ranked by significance — your task is to judge where each event should sit",
           captionZh: "\u8bfe\u5ba4\u4e2d\u5c55\u793a\u6c11\u6743\u4e8b\u4ef6\u91cd\u8981\u6027\u6392\u540d\u7684\u56fe\u8868\u2014\u2014\u4f60\u7684\u4efb\u52a1\u662f\u5224\u65ad\u6bcf\u4e2a\u4e8b\u4ef6\u5e94\u5904\u4e8e\u54ea\u4e2a\u4f4d\u7f6e",
           source: "Classroom materials (Shrewsbury School, Y8 History)",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Martin_Luther_King,_Jr..jpg",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Martin_Luther_King_Jr_NYWTS.jpg",
         },
         {
           type: "source",

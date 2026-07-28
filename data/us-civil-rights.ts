@@ -464,7 +464,7 @@ export const usCivilRights: Topic = {
           caption: "The March on Washington, 28 August 1963 — over 250,000 people gathered at the Lincoln Memorial, where Martin Luther King Jr. delivered 'I Have a Dream'",
           captionZh: "1963 \u5e74 8 \u6708 28 \u65e5\u534e\u76db\u987f\u6e38\u884c\u2014\u2014\u8d85\u8fc7 25 \u4e07\u4eba\u805a\u96c6\u4e8e\u6797\u80af\u7eaa\u5ff5\u5802\uff0c\u9a6c\u4e01\u00b7\u8def\u5fb7\u00b7\u91d1\u535a\u58eb\u5728\u6b64\u53d1\u8868\u201c\u6211\u6709\u4e00\u4e2a\u68a6\u60f3\u201d\u6f14\u8bb2",
           source: "Wikimedia Commons (Public Domain)",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/March_on_washington_Aug_28_1963.jpg",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/1963_march_on_washington.jpg",
         },
         {
           type: "source",

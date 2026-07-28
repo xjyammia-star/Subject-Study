@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { put } from "@vercel/blob";
 import { sql } from "@vercel/postgres";
+import { humanRights } from "@/data/human-rights";
 import { atlanticSlaveTrade } from "@/data/atlantic-slave-trade";
 import { britishEmpire } from "@/data/british-empire";
 import { usCivilRights } from "@/data/us-civil-rights";
@@ -13,31 +14,56 @@ type ImageTask = {
   filename: string;
 };
 
+/** Build the Wikimedia source URL from a filename */
+function wikimediaUrl(filename: string): string {
+  return `https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(filename)}`;
+}
+
+/** Collect all image tasks from topic data (supports both url and wikimediaFile) */
 function collectImageTasks(topics: Topic[]): ImageTask[] {
   const tasks: ImageTask[] = [];
   for (const topic of topics) {
     for (const lesson of topic.lessons) {
       for (const section of lesson.sections) {
-        if (section.type === "image" && section.url) {
+        if (section.type !== "image") continue;
+
+        let sourceUrl: string | undefined;
+        let ext = "jpg";
+
+        if (section.wikimediaFile) {
+          // New format: wikimediaFile field
+          sourceUrl = wikimediaUrl(section.wikimediaFile);
+          const rawExt = section.wikimediaFile.split(".").pop() ?? "jpg";
+          ext = ["jpg", "jpeg", "png", "webp", "gif", "svg"].includes(
+            rawExt.toLowerCase()
+          )
+            ? rawExt.toLowerCase()
+            : "jpg";
+        } else if (section.url) {
+          // Old format: direct url field (skip if already a Blob URL)
           if (
             section.url.startsWith("/") ||
             section.url.includes("vercel-storage.com")
           )
             continue;
+          sourceUrl = section.url;
           const urlPath = section.url.split("?")[0];
           const rawExt = urlPath.split(".").pop() ?? "jpg";
-          const ext = ["jpg", "jpeg", "png", "webp", "gif"].includes(
+          ext = ["jpg", "jpeg", "png", "webp", "gif"].includes(
             rawExt.toLowerCase()
           )
             ? rawExt.toLowerCase()
             : "jpg";
-          tasks.push({
-            topicSlug: topic.slug,
-            lessonNum: lesson.num,
-            sourceUrl: section.url,
-            filename: `${topic.slug}-lesson${lesson.num}.${ext}`,
-          });
         }
+
+        if (!sourceUrl) continue;
+
+        tasks.push({
+          topicSlug: topic.slug,
+          lessonNum: lesson.num,
+          sourceUrl,
+          filename: `${topic.slug}-lesson${lesson.num}.${ext}`,
+        });
       }
     }
   }
@@ -61,7 +87,6 @@ async function uploadOne(task: ImageTask): Promise<{
     },
   });
 
-  // Return 429 info to client so it can wait and retry
   if (res.status === 429) {
     const retryAfter = res.headers.get("retry-after") ?? "5";
     return {
@@ -103,11 +128,14 @@ async function uploadOne(task: ImageTask): Promise<{
   return { ok: true, blobUrl, detail: `${buffer.byteLength} bytes → ${blobUrl}` };
 }
 
+/** Return only tasks whose lesson does NOT yet have a Blob URL in the database */
 async function getPendingTasks(
   topics: Topic[],
   allTasks: ImageTask[]
 ): Promise<ImageTask[]> {
-  const pending: ImageTask[] = [];
+  // Build a set of "topicSlug:lessonNum" that already have a Blob URL
+  const doneSet = new Set<string>();
+
   for (const topic of topics) {
     const { rows } = await sql`
       SELECT num, sections FROM lessons
@@ -120,30 +148,35 @@ async function getPendingTasks(
         if (
           s.type === "image" &&
           s.url &&
-          !s.url.includes("vercel-storage.com") &&
-          !s.url.startsWith("/")
+          s.url.includes("vercel-storage.com")
         ) {
-          const match = allTasks.find(
-            (t) => t.topicSlug === topic.slug && t.lessonNum === row.num
-          );
-          if (match) pending.push(match);
+          doneSet.add(`${topic.slug}:${row.num}`);
         }
       }
     }
   }
-  return pending;
+
+  // Return tasks not yet in doneSet
+  return allTasks.filter(
+    (t) => !doneSet.has(`${t.topicSlug}:${t.lessonNum}`)
+  );
 }
 
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
   const showStatus = searchParams.get("status") === "1";
 
-  const topics: Topic[] = [atlanticSlaveTrade, britishEmpire, usCivilRights];
+  const topics: Topic[] = [humanRights, atlanticSlaveTrade, britishEmpire, usCivilRights];
   const allTasks = collectImageTasks(topics);
 
   // ── Status mode ──
   if (showStatus) {
-    const results: { topic: string; lesson: number; url: string; isBlob: boolean }[] = [];
+    const results: {
+      topic: string;
+      lesson: number;
+      url: string;
+      isBlob: boolean;
+    }[] = [];
     for (const topic of topics) {
       const { rows } = await sql`
         SELECT num, sections FROM lessons
@@ -196,7 +229,12 @@ export async function GET(request: Request) {
   } catch (err) {
     const msg = err instanceof Error ? err.message : String(err);
     return NextResponse.json(
-      { success: false, error: msg, filename: task.filename, remaining: pendingTasks.length },
+      {
+        success: false,
+        error: msg,
+        filename: task.filename,
+        remaining: pendingTasks.length,
+      },
       { status: 500 }
     );
   }

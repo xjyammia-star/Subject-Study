@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { createTables, insertTopic, insertLesson } from "@/lib/db";
+import { humanRights } from "@/data/human-rights";
 import { atlanticSlaveTrade } from "@/data/atlantic-slave-trade";
 import { britishEmpire } from "@/data/british-empire";
 import { usCivilRights } from "@/data/us-civil-rights";
@@ -23,7 +24,7 @@ export async function GET() {
     await createTables();
     log.push("Tables ready.");
 
-    const topics: Topic[] = [atlanticSlaveTrade, britishEmpire, usCivilRights];
+    const topics: Topic[] = [humanRights, atlanticSlaveTrade, britishEmpire, usCivilRights];
 
     for (const topic of topics) {
       await seedTopic(topic, log);

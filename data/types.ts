@@ -39,7 +39,8 @@ export interface ImageSection {
   caption: string;
   captionZh: string;
   source: string;
-  url?: string; // future: actual image URL
+  url?: string;          // Blob URL after upload
+  wikimediaFile?: string; // Wikimedia Commons filename (used before upload)
 }
 
 export interface SourceSection {

@@ -69,8 +69,46 @@ export async function createTables() {
   `;
 }
 
+/**
+ * Collect all existing Blob URLs from a topic's lessons before deleting.
+ * Returns a map of lessonNum -> blobUrl (only for lessons that have a Blob URL).
+ */
+async function collectExistingBlobUrls(
+  topicSlug: string
+): Promise<Map<number, string>> {
+  const blobMap = new Map<number, string>();
+
+  try {
+    const { rows } = await sql`
+      SELECT num, sections FROM lessons
+      WHERE topic_id = (SELECT id FROM topics WHERE slug = ${topicSlug})
+    `;
+
+    for (const row of rows) {
+      const sections = row.sections as LessonSection[];
+      for (const section of sections) {
+        if (
+          section.type === "image" &&
+          section.url &&
+          section.url.includes("vercel-storage.com")
+        ) {
+          blobMap.set(row.num, section.url);
+          break; // one image section per lesson
+        }
+      }
+    }
+  } catch {
+    // Table may not exist yet on first seed — that's fine
+  }
+
+  return blobMap;
+}
+
 export async function insertTopic(topic: Topic): Promise<number> {
-  // Delete existing topic and its lessons first (for re-seeding)
+  // Save existing Blob URLs before deleting
+  const existingBlobUrls = await collectExistingBlobUrls(topic.slug);
+
+  // Delete existing topic and its lessons (for re-seeding)
   await sql`DELETE FROM lessons WHERE topic_id IN (SELECT id FROM topics WHERE slug = ${topic.slug})`;
   await sql`DELETE FROM topics WHERE slug = ${topic.slug}`;
 
@@ -79,7 +117,25 @@ export async function insertTopic(topic: Topic): Promise<number> {
     VALUES (${topic.slug}, ${topic.name}, ${topic.nameZh}, ${topic.subject}, ${topic.subjectZh}, ${topic.year})
     RETURNING id
   `;
-  return rows[0].id;
+
+  const topicId = rows[0].id;
+
+  // Re-attach saved Blob URLs to the topic object before lesson insertion
+  if (existingBlobUrls.size > 0) {
+    for (const lesson of topic.lessons) {
+      const blobUrl = existingBlobUrls.get(lesson.num);
+      if (blobUrl) {
+        for (const section of lesson.sections) {
+          if (section.type === "image") {
+            section.url = blobUrl;
+            break;
+          }
+        }
+      }
+    }
+  }
+
+  return topicId;
 }
 
 export async function insertLesson(topicId: number, lesson: Lesson) {

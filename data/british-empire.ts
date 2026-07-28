@@ -243,7 +243,7 @@ export const britishEmpire: Topic = {
           caption: "British goods and trade networks stretched across every continent — empire created enormous economic opportunities for Britain",
           captionZh: "\u82f1\u56fd\u5546\u54c1\u548c\u8d38\u6613\u7f51\u7edc\u5ef6\u4f38\u81f3\u6bcf\u4e2a\u5927\u6d32\u2014\u2014\u5e1d\u56fd\u4e3a\u82f1\u56fd\u521b\u9020\u4e86\u5de8\u5927\u7684\u7ecf\u6d4e\u673a\u9047",
           source: "Wikimedia Commons (Public Domain)",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/British_Empire_1890.jpg",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/British_empire_1886.jpg",
         },
         {
           type: "source",
@@ -388,7 +388,7 @@ export const britishEmpire: Topic = {
           caption: "The 1886 Imperial Federation Map — all British territories shown in red, produced to celebrate Queen Victoria's Jubilee",
           captionZh: "1886 \u5e74\u5e1d\u56fd\u8054\u90a6\u5730\u56fe\u2014\u2014\u6240\u6709\u82f1\u56fd\u9886\u571f\u6807\u8bc6\u4e3a\u7ea2\u8272\uff0c\u4e3a\u5e86\u795d\u7ef4\u591a\u5229\u4e9a\u5973\u738b\u79cd\u5e74\u800c\u5236\u4f5c",
           source: "Wikimedia Commons (Public Domain)",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Imperial_Federation,_Map_of_the_World_Showing_the_Extent_of_the_British_Empire_in_1886_(levelled).jpg",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Imperial_Federation_Map_of_the_World.jpg",
         },
         {
           type: "source",

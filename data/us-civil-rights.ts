@@ -164,7 +164,7 @@ export const usCivilRights: Topic = {
           caption: "Thurgood Marshall (centre) and NAACP lawyers outside the Supreme Court after the Brown v. Board ruling, 1954",
           captionZh: "\u745f\u826f\u5fb7\u00b7\u9a6c\u6b47\u5c14\uff08\u4e2d\uff09\u548c NAACP \u5f8b\u5e08\u4e8e 1954 \u5e74\u5e03\u6717\u6848\u88c1\u51b3\u540e\u5728\u6700\u9ad8\u6cd5\u9662\u5916\u5090",
           source: "Wikimedia Commons (Public Domain)",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Thurgood-marshall-2.jpg",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Thurgoodmarshall1967.jpg",
         },
         {
           type: "source",

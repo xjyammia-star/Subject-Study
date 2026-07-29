@@ -204,6 +204,33 @@ export async function GET(request: Request) {
     });
   }
 
+  // ── Force mode: ?force=topicSlug:lessonNum ──
+  const forceParam = searchParams.get("force"); // e.g. "human-rights:1"
+  if (forceParam) {
+    const [forceSlug, forceNumStr] = forceParam.split(":");
+    const forceNum = parseInt(forceNumStr, 10);
+    const task = allTasks.find(
+      (t) => t.topicSlug === forceSlug && t.lessonNum === forceNum
+    );
+    if (!task) {
+      return NextResponse.json({ success: false, error: `Task not found: ${forceParam}` }, { status: 404 });
+    }
+    try {
+      const result = await uploadOne(task);
+      return NextResponse.json({
+        success: result.ok,
+        rateLimited: result.rateLimited ?? false,
+        filename: task.filename,
+        blobUrl: result.blobUrl,
+        detail: result.detail,
+        forced: true,
+      });
+    } catch (err) {
+      const msg = err instanceof Error ? err.message : String(err);
+      return NextResponse.json({ success: false, error: msg }, { status: 500 });
+    }
+  }
+
   // ── Upload ONE pending image ──
   const pendingTasks = await getPendingTasks(topics, allTasks);
 

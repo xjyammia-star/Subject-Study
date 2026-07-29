@@ -90,10 +90,10 @@ export const humanRights: Topic = {
         },
         {
           type: "image",
-          caption: "A diagram showing the layout of a slave ship — evidence of how enslaved people were treated as cargo",
-          captionZh: "\u4e00\u5f20\u663e\u793a\u5974\u96b6\u8239\u5185\u90e8\u5e03\u5c40\u7684\u56fe\u8868\u2014\u2014\u8bc1\u660e\u88ab\u5974\u5f79\u8005\u88ab\u5f53\u4f5c\u8d27\u7269\u5bf9\u5f85",
+          caption: "The Slave Trade (1840) by François-Auguste Biard — a painting depicting enslaved Africans being bought and sold on the West African coast",
+          captionZh: "\u6cd5\u56fd\u753b\u5bb6\u6bd4\u4e9a\u5c14\u4e8e1840\u5e74\u521b\u4f5c\u7684\u6cb9\u753b\u300a\u5974\u96b6\u8d38\u6613\u300b\u2014\u2014\u63cf\u7ed8\u88ab\u5974\u5f79\u7684\u975e\u6d32\u4eba\u5728\u897f\u975e\u6d77\u5cb8\u88ab\u4e70\u5356\u7684\u573a\u666f",
           source: "Wikimedia Commons",
-          wikimediaFile: "Slaveshipposter.jpg",
+          wikimediaFile: "The_Slave_Trade_by_Auguste_Francois_Biard.jpg",
         },
         {
           type: "source",

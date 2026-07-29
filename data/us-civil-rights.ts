@@ -161,8 +161,8 @@ export const usCivilRights: Topic = {
         },
         {
           type: "image",
-          caption: "Thurgood Marshall (centre) and NAACP lawyers outside the Supreme Court after the Brown v. Board ruling, 1954",
-          captionZh: "\u745f\u826f\u5fb7\u00b7\u9a6c\u6b47\u5c14\uff08\u4e2d\uff09\u548c NAACP \u5f8b\u5e08\u4e8e 1954 \u5e74\u5e03\u6717\u6848\u88c1\u51b3\u540e\u5728\u6700\u9ad8\u6cd5\u9662\u5916\u5090",
+          caption: "Thurgood Marshall, photographed in 1967 when he became the first African American Justice of the United States Supreme Court",
+          captionZh: "\u745f\u826f\u5fb7\u00b7\u9a6c\u6b47\u5c14\u62cd\u6444\u4e8e1967\u5e74\uff0c\u5f53\u65f6\u4ed6\u6210\u4e3a\u7f8e\u56fd\u6700\u9ad8\u6cd5\u9662\u9996\u4f4d\u975e\u88d4\u7f8e\u56fd\u5927\u6cd5\u5b98",
           source: "Wikimedia Commons (Public Domain)",
           url: "https://commons.wikimedia.org/wiki/Special:FilePath/Thurgoodmarshall1967.jpg",
         },

@@ -240,8 +240,8 @@ export const britishEmpire: Topic = {
         },
         {
           type: "image",
-          caption: "A map of the world in 1890 showing British territories highlighted in red — at its peak the empire covered a quarter of the world's land surface",
-          captionZh: "\u4e00\u5f20\u663e\u793a1890\u5e74\u4e16\u754c\u5730\u56fe\u7684\u793a\u610f\u56fe\uff0c\u82f1\u5c5e\u9886\u571f\u4ee5\u7ea2\u8272\u6807\u6ce8\u2014\u2014\u5e1d\u56fd\u5168\u76db\u65f6\u671f\u8986\u76d6\u4e86\u4e16\u754c\u56db\u5206\u4e4b\u4e00\u7684\u9646\u5730\u9762\u79ef",
+          caption: "A map of the British Empire in 1890, showing territories acquired since 1790 - at its peak the empire covered a quarter of the world's land surface",
+          captionZh: "\u82f1\u5e1d\u56fd1890\u5e74\u7248\u56fe\uff0c\u6807\u6ce8\u4e861790\u5e74\u4ee5\u6765\u83b7\u5f97\u7684\u9886\u571f\u2014\u2014\u5e1d\u56fd\u5168\u76db\u65f6\u671f\u8986\u76d6\u4e86\u4e16\u754c\u56db\u5206\u4e4b\u4e00\u7684\u9646\u5730\u9762\u79ef",
           source: "Wikimedia Commons (Public Domain)",
           url: "https://commons.wikimedia.org/wiki/Special:FilePath/British_Empire_1890.jpg",
         },

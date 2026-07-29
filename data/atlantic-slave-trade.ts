@@ -566,10 +566,10 @@ export const atlanticSlaveTrade: Topic = {
         },
         {
           type: "image",
-          caption: "The Brookes slave ship diagram \u2014 showing how enslaved people were packed below deck",
-          captionZh: "\u5e03\u9c81\u514b\u65af\u53f7\u5974\u96b6\u8239\u56fe\u2014\u2014\u5c55\u793a\u88ab\u5974\u5f79\u7684\u4eba\u5982\u4f55\u88ab\u6324\u5728\u7532\u677f\u4e0b",
+          caption: "An 1832 illustration depicting enslaved Africans being thrown overboard from a slave ship during the Middle Passage",
+          captionZh: "\u4e00\u5e741832\u5e74\u7684\u63d2\u56fe\uff0c\u63cf\u7ed8\u5728\u4e2d\u95f4\u822a\u7a0b\u4e2d\u88ab\u5974\u5f79\u7684\u975e\u6d32\u4eba\u88ab\u629b\u5165\u6d77\u4e2d",
           source: "Wikimedia Commons (Public Domain)",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Stowage_of_the_British_slave_ship_Brookes_under_the_regulated_slave_trade_act_of_1788_LCCN98504459.jpg",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Slaves_being_thrown_overboard_from_an_unidentified_slave_ship.jpg",
         },
         {
           type: "source",

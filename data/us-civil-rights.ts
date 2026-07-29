@@ -261,8 +261,8 @@ export const usCivilRights: Topic = {
         },
         {
           type: "image",
-          caption: "Martin Luther King Jr. and Rosa Parks — two of the most important figures of the Montgomery Bus Boycott",
-          captionZh: "\u9a6c\u4e01\u00b7\u8def\u5fb7\u00b7\u91d1\u535a\u58eb\u4e0e\u7f57\u838e\u00b7\u5e15\u514b\u65af\u2014\u2014\u8499\u54e5\u9a6c\u5229\u516c\u5171\u6c7d\u8f66\u629a\u5236\u8fd0\u52a8\u4e2d\u6700\u91cd\u8981\u7684\u4e24\u4e2a\u4eba\u7269",
+          caption: "The bus on which Rosa Parks refused to give up her seat, now preserved at the Henry Ford Museum - a symbol of the Montgomery Bus Boycott",
+          captionZh: "\u7f57\u838e\u00b7\u5e15\u514b\u65af\u62d2\u7edd\u8ba9\u5ea7\u7684\u516c\u5171\u6c7d\u8f66\uff0c\u73b0\u4fdd\u5b58\u4e8e\u4eab\u5229\u798f\u7279\u535a\u7269\u9986\u2014\u2014\u8499\u54e5\u9a6c\u5229\u516c\u8f66\u6297\u8bae\u8fd0\u52a8\u7684\u8c61\u5f81",
           source: "Wikimedia Commons (Public Domain)",
           url: "https://commons.wikimedia.org/wiki/Special:FilePath/Rosa_parks_bus.jpg",
         },

@@ -820,9 +820,9 @@ export const britishEmpire: Topic = {
         },
         {
           type: "image",
-          caption: "A textbook page asking: 'What have the British ever done for us?' — presenting evidence of claimed imperial benefits in India, Canada, and South Africa",
-          captionZh: "\u6559\u79d1\u4e66\u4e00\u9875\u63d0\u95ee\uff1a\u201c\u82f1\u56fd\u4eba\u7a76\u7adf\u4e3a\u6211\u4eec\u505a\u4e86\u4ec0\u4e48\uff1f\u201d\u2014\u2014\u5448\u73b0\u5370\u5ea6\u3001\u52a0\u62ff\u5927\u548c\u5357\u975e\u6240\u8c13\u5e1d\u56fd\u6240\u5e26\u6765\u76ca\u5904\u7684\u8bc1\u636e",
-          source: "Classroom materials (Shrewsbury School, Y8 History)",
+          caption: "The Rhodes Colossus (1892) — a Punch magazine cartoon satirising Cecil Rhodes's ambition to control Africa from Cape Town to Cairo, symbolising British imperial overreach",
+          captionZh: "\u300a\u7f57\u5fb7\u65af\u5de8\u4eba\u300b\uff081892\u5e74\uff09\u2014\u2014\u300a\u7b28\u8da3\u300b\u6742\u5fd7\u8ba5\u523a\u585e\u897f\u5c14\u00b7\u7f57\u5fb7\u65af\u5de1\u601d\u63a7\u5236\u975e\u6d32\u3001\u8c61\u5f81\u82f1\u5e1d\u56fd\u6269\u5f20\u91ce\u5fc3",
+          source: "Wikimedia Commons (Public Domain)",
           url: "https://commons.wikimedia.org/wiki/Special:FilePath/Punch_Rhodes_Colossus.png",
         },
         {

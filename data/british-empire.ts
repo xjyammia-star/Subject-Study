@@ -820,10 +820,10 @@ export const britishEmpire: Topic = {
         },
         {
           type: "image",
-          caption: "The Rhodes Colossus (1892) — a Punch magazine cartoon satirising Cecil Rhodes's ambition to control Africa from Cape Town to Cairo, symbolising British imperial overreach",
-          captionZh: "\u300a\u7f57\u5fb7\u65af\u5de8\u4eba\u300b\uff081892\u5e74\uff09\u2014\u2014\u300a\u7b28\u8da3\u300b\u6742\u5fd7\u8ba5\u523a\u585e\u897f\u5c14\u00b7\u7f57\u5fb7\u65af\u5de1\u601d\u63a7\u5236\u975e\u6d32\u3001\u8c61\u5f81\u82f1\u5e1d\u56fd\u6269\u5f20\u91ce\u5fc3",
+          caption: "A map of Indian railways in 1909 — the rail network built under British rule is often cited as both a benefit of empire and a tool of colonial economic control",
+          captionZh: "\u4e00\u5f20\u63cf\u7ed81909\u5e74\u5370\u5ea6\u9493\u8def\u7684\u5730\u56fe\u2014\u2014\u82f1\u56fd\u6b96\u6c11\u7edf\u6cbb\u4e0b\u5efa\u9020\u7684\u9493\u8def\u7f51\u7edc\uff0c\u5e38\u88ab\u5f15\u7528\u4e3a\u5e1d\u56fd\u76ca\u5904\u4e0e\u6b96\u6c11\u7ecf\u6d4e\u5de5\u5177\u7684\u53cc\u91cd\u8bc1\u660e",
           source: "Wikimedia Commons (Public Domain)",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Punch_Rhodes_Colossus.png",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/India_railways1909a.jpg",
         },
         {
           type: "source",

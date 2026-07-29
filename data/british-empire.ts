@@ -240,10 +240,10 @@ export const britishEmpire: Topic = {
         },
         {
           type: "image",
-          caption: "British goods and trade networks stretched across every continent — empire created enormous economic opportunities for Britain",
-          captionZh: "\u82f1\u56fd\u5546\u54c1\u548c\u8d38\u6613\u7f51\u7edc\u5ef6\u4f38\u81f3\u6bcf\u4e2a\u5927\u6d32\u2014\u2014\u5e1d\u56fd\u4e3a\u82f1\u56fd\u521b\u9020\u4e86\u5de8\u5927\u7684\u7ecf\u6d4e\u673a\u9047",
+          caption: "A map of the world in 1890 showing British territories highlighted in red — at its peak the empire covered a quarter of the world's land surface",
+          captionZh: "\u4e00\u5f20\u663e\u793a1890\u5e74\u4e16\u754c\u5730\u56fe\u7684\u793a\u610f\u56fe\uff0c\u82f1\u5c5e\u9886\u571f\u4ee5\u7ea2\u8272\u6807\u6ce8\u2014\u2014\u5e1d\u56fd\u5168\u76db\u65f6\u671f\u8986\u76d6\u4e86\u4e16\u754c\u56db\u5206\u4e4b\u4e00\u7684\u9646\u5730\u9762\u79ef",
           source: "Wikimedia Commons (Public Domain)",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/British_empire_1886.jpg",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/British_Empire_1890.jpg",
         },
         {
           type: "source",

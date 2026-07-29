@@ -726,7 +726,7 @@ export const atlanticSlaveTrade: Topic = {
           caption: "Enslaved Africans arriving by ship \u2014 before being sold in the Americas",
           captionZh: "\u88ab\u5974\u5f79\u7684\u975e\u6d32\u4eba\u4e58\u8239\u62b5\u8fbe\u2014\u2014\u5728\u7f8e\u6d32\u88ab\u51fa\u552e\u4e4b\u524d",
           source: "Wikimedia Commons (Public Domain)",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Slave_auction.jpg",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Slave_Auction.jpg",
         },
         {
           type: "source",

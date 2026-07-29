@@ -220,10 +220,10 @@ export const humanRights: Topic = {
         },
         {
           type: "image",
-          caption: "A diagram showing the triangular trade routes connecting Britain, West Africa, and the Americas",
-          captionZh: "\u4e00\u5f20\u663e\u793a\u4e09\u89d2\u8d38\u6613\u8def\u7ebf\u7684\u56fe\u8868\uff0c\u8fde\u63a5\u82f1\u56fd\u3001\u897f\u975e\u548c\u7f8e\u6d32",
+          caption: "A diagram showing the three-stage triangular trade route connecting Britain, West Africa, and the Americas",
+          captionZh: "\u4e00\u5f20\u663e\u793a\u4e09\u9636\u6bb5\u4e09\u89d2\u8d38\u6613\u8def\u7ebf\u7684\u56fe\u8868\uff0c\u8fde\u63a5\u82f1\u56fd\u3001\u897f\u975e\u548c\u7f8e\u6d32",
           source: "Wikimedia Commons",
-          wikimediaFile: "Triangular_trade.png",
+          wikimediaFile: "Triangle_trade2.png",
         },
         {
           type: "source",

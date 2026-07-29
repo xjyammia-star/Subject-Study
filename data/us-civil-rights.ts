@@ -161,10 +161,10 @@ export const usCivilRights: Topic = {
         },
         {
           type: "image",
-          caption: "Thurgood Marshall, photographed in 1967 when he became the first African American Justice of the United States Supreme Court",
-          captionZh: "\u745f\u826f\u5fb7\u00b7\u9a6c\u6b47\u5c14\u62cd\u6444\u4e8e1967\u5e74\uff0c\u5f53\u65f6\u4ed6\u6210\u4e3a\u7f8e\u56fd\u6700\u9ad8\u6cd5\u9662\u9996\u4f4d\u975e\u88d4\u7f8e\u56fd\u5927\u6cd5\u5b98",
+          caption: "NAACP lawyers Hayes, Thurgood Marshall, and Nabrit celebrate outside the Supreme Court after the Brown v. Board ruling, 1954",
+          captionZh: "NAACP\u5f8b\u5e08\u6d77\u8036\u65af\u3001\u745f\u826f\u5fb7\u00b7\u9a6c\u6b47\u5c14\u548c\u7eb3\u5e03\u91cc\u7279\u57281954\u5e74\u5e03\u6717\u6848\u88c1\u51b3\u540e\u5728\u6700\u9ad8\u6cd5\u9662\u9580\u5916\u5e86\u795d",
           source: "Wikimedia Commons (Public Domain)",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Thurgoodmarshall1967.jpg",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/NAACP_leaders_with_poster_NYWTS.jpg",
         },
         {
           type: "source",
@@ -361,8 +361,8 @@ export const usCivilRights: Topic = {
         },
         {
           type: "image",
-          caption: "A Greyhound bus burned by attackers in Anniston, Alabama, 1961 — images like this turned national opinion against segregation",
-          captionZh: "1961 \u5e74\u963f\u62c9\u5df4\u9a6c\u5dde\u5b89\u5185\u65af\u987f\u88ad\u51fb\u8005\u70e7\u6bc1\u7684\u7070\u72d7\u5eba\u8f66\u2014\u2014\u8fd9\u6837\u7684\u56fe\u50cf\u4f7f\u5168\u56fd\u6c11\u610f\u8f6c\u800c\u53cd\u5bf9\u9694\u79bb\u5236\u5ea6",
+          caption: "The lunch counter at the Woolworth store in Greensboro, North Carolina — the site of the famous 1960 sit-in protest",
+          captionZh: "\u5317\u5361\u7f57\u6765\u7eb3\u5dde\u683c\u6797\u65af\u4f2f\u7f57\u5a01\u5c14\u6c83\u5c14\u65af\u5c45\u5bb6\u5e97\u9910\u5385\u67dc\u53f0\u2014\u20141960\u5e74\u8457\u540d\u9759\u5750\u6297\u8bae\u7684\u5730\u70b9",
           source: "Wikimedia Commons (Public Domain)",
           url: "https://commons.wikimedia.org/wiki/Special:FilePath/Greensboro_sit-in_counter.jpg",
         },
@@ -561,10 +561,10 @@ export const usCivilRights: Topic = {
         },
         {
           type: "image",
-          caption: "A graph from the classroom showing civil rights events ranked by significance — your task is to judge where each event should sit",
-          captionZh: "\u8bfe\u5ba4\u4e2d\u5c55\u793a\u6c11\u6743\u4e8b\u4ef6\u91cd\u8981\u6027\u6392\u540d\u7684\u56fe\u8868\u2014\u2014\u4f60\u7684\u4efb\u52a1\u662f\u5224\u65ad\u6bcf\u4e2a\u4e8b\u4ef6\u5e94\u5904\u4e8e\u54ea\u4e2a\u4f4d\u7f6e",
+          caption: "Martin Luther King Jr. delivering the 'I Have a Dream' speech at the March on Washington, 28 August 1963",
+          captionZh: "\u9a6c\u4e01\u00b7\u8def\u5fb7\u00b7\u91d1\u535a\u58eb\u4e8e1963\u5e748\u670828\u65e5\u5728\u534e\u76db\u987f\u6e38\u884c\u4e0a\u53d1\u8868\u201c\u6211\u6709\u4e00\u4e2a\u68a6\u60f3\u201d\u6f14\u8bb2",
           source: "Classroom materials (Shrewsbury School, Y8 History)",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Martin_Luther_King_Jr_NYWTS.jpg",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Martin_Luther_King_-_March_on_Washington.jpg",
         },
         {
           type: "source",

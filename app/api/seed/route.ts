@@ -4,6 +4,7 @@ import { humanRights } from "@/data/human-rights";
 import { atlanticSlaveTrade } from "@/data/atlantic-slave-trade";
 import { britishEmpire } from "@/data/british-empire";
 import { usCivilRights } from "@/data/us-civil-rights";
+import { learningCheck } from "@/data/learning-check";
 import { Topic } from "@/data/types";
 
 async function seedTopic(topic: Topic, log: string[]): Promise<void> {
@@ -24,7 +25,7 @@ export async function GET() {
     await createTables();
     log.push("Tables ready.");
 
-    const topics: Topic[] = [humanRights, atlanticSlaveTrade, britishEmpire, usCivilRights];
+    const topics: Topic[] = [humanRights, atlanticSlaveTrade, britishEmpire, usCivilRights, learningCheck];
 
     for (const topic of topics) {
       await seedTopic(topic, log);

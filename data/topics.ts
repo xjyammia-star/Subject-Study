@@ -3,6 +3,7 @@ import { humanRights } from "./human-rights";
 import { atlanticSlaveTrade } from "./atlantic-slave-trade";
 import { britishEmpire } from "./british-empire";
 import { usCivilRights } from "./us-civil-rights";
+import { learningCheck } from "./learning-check";
 
 /** All available topics, keyed by slug */
 export const topics: Record<string, Topic> = {
@@ -10,7 +11,8 @@ export const topics: Record<string, Topic> = {
   "atlantic-slave-trade": atlanticSlaveTrade,
   "british-empire": britishEmpire,
   "us-civil-rights": usCivilRights,
+  "learning-check": learningCheck,
 };
 
 /** Ordered list for the home page */
-export const topicList = [humanRights, atlanticSlaveTrade, britishEmpire, usCivilRights];
+export const topicList = [humanRights, atlanticSlaveTrade, britishEmpire, usCivilRights, learningCheck];

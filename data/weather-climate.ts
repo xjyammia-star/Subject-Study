@@ -319,10 +319,6 @@ export const weatherClimate: Topic = {
       ],
     },
 
-  ],
-};
-
-export default weatherClimate;
 
     /* ========== Lesson 6 ========== */
     {

@@ -40,12 +40,7 @@ const subjectConfig: Record<string, {
   },
 };
 
-const comingSoonTopics: Record<string, { name: string; nameZh: string }[]> = {
-  geography: [
-    { name: "Rivers and Coasts", nameZh: "\u6cb3\u6d41\u4e0e\u6d77\u5cb8" },
-    { name: "Climate and Weather", nameZh: "\u6c14\u5019\u4e0e\u5929\u6c14" },
-  ],
-};
+const comingSoonTopics: Record<string, { name: string; nameZh: string }[]> = {};
 
 interface Props {
   subjectKey: string;

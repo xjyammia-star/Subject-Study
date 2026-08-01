@@ -6,6 +6,7 @@ import { usCivilRights } from "./us-civil-rights";
 import { learningCheck } from "./learning-check";
 import { asia } from "./asia";
 import { asiaEconomicBoom } from "./asia-economic-boom";
+import { weatherClimate } from "./weather-climate";
 
 /** All available topics, keyed by slug */
 export const topics: Record<string, Topic> = {
@@ -16,7 +17,8 @@ export const topics: Record<string, Topic> = {
   "learning-check": learningCheck,
   "asia": asia,
   "asia-economic-boom": asiaEconomicBoom,
+  "weather-climate": weatherClimate,
 };
 
 /** Ordered list for the home page */
-export const topicList = [humanRights, atlanticSlaveTrade, britishEmpire, usCivilRights, learningCheck, asia, asiaEconomicBoom];
+export const topicList = [humanRights, atlanticSlaveTrade, britishEmpire, usCivilRights, learningCheck, asia, asiaEconomicBoom, weatherClimate];

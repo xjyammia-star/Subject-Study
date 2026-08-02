@@ -8,6 +8,7 @@ import { asia } from "./asia";
 import { asiaEconomicBoom } from "./asia-economic-boom";
 import { weatherClimate } from "./weather-climate";
 import { tourism } from "./tourism";
+import { geographyLearningCheck } from "./geography-learning-check";
 
 /** All available topics, keyed by slug */
 export const topics: Record<string, Topic> = {
@@ -20,7 +21,11 @@ export const topics: Record<string, Topic> = {
   "asia-economic-boom": asiaEconomicBoom,
   "weather-climate": weatherClimate,
   "tourism": tourism,
+  "geography-learning-check": geographyLearningCheck,
 };
 
 /** Ordered list for the home page */
-export const topicList = [humanRights, atlanticSlaveTrade, britishEmpire, usCivilRights, learningCheck, asia, asiaEconomicBoom, weatherClimate, tourism];
+export const topicList = [
+  humanRights, atlanticSlaveTrade, britishEmpire, usCivilRights, learningCheck,
+  asia, asiaEconomicBoom, weatherClimate, tourism, geographyLearningCheck,
+];

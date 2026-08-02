@@ -9,6 +9,7 @@ import { asia } from "@/data/asia";
 import { asiaEconomicBoom } from "@/data/asia-economic-boom";
 import { weatherClimate } from "@/data/weather-climate";
 import { tourism } from "@/data/tourism";
+import { geographyLearningCheck } from "@/data/geography-learning-check";
 import { Topic } from "@/data/types";
 
 async function seedTopic(topic: Topic, log: string[]): Promise<void> {
@@ -29,7 +30,10 @@ export async function GET() {
     await createTables();
     log.push("Tables ready.");
 
-    const topics: Topic[] = [humanRights, atlanticSlaveTrade, britishEmpire, usCivilRights, learningCheck, asia, asiaEconomicBoom, weatherClimate, tourism];
+    const topics: Topic[] = [
+      humanRights, atlanticSlaveTrade, britishEmpire, usCivilRights, learningCheck,
+      asia, asiaEconomicBoom, weatherClimate, tourism, geographyLearningCheck,
+    ];
 
     for (const topic of topics) {
       await seedTopic(topic, log);

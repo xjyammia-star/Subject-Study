@@ -91,9 +91,10 @@ export const asia: Topic = {
         },
         {
           type: "image",
-          caption: "A political map of Asia showing its countries and major regions.",
-          captionZh: "\u4e9a\u6d32\u653f\u6cbb\u5730\u56fe\uff0c\u663e\u793a\u5404\u56fd\u5bb6\u548c\u4e3b\u8981\u5730\u533a\u3002",
-          source: "Placeholder \u2014 image to be added",
+          caption: "The Himalayas photographed from the International Space Station \u2014 showing the scale of Asia\u2019s largest mountain range.",
+          captionZh: "\u56fd\u9645\u7a7a\u95f4\u7ad9\u62cd\u6444\u7684\u559c\u9a6c\u62c9\u96c5\u5c71\u8109\uff0c\u5c55\u73b0\u4e9a\u6d32\u6700\u5927\u5c71\u8109\u7684\u89c4\u6a21\u3002",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Himalayas.jpg",
+          source: "Wikimedia Commons",
         },
         {
           type: "source",
@@ -226,9 +227,10 @@ export const asia: Topic = {
         },
         {
           type: "image",
-          caption: "A population density map of Asia showing where people are concentrated.",
-          captionZh: "\u4e9a\u6d32\u4eba\u53e3\u5bc6\u5ea6\u5730\u56fe\uff0c\u663e\u793a\u4eba\u53e3\u96c6\u4e2d\u7684\u5730\u533a\u3002",
-          source: "Placeholder \u2014 image to be added",
+          caption: "The Arabian Desert \u2014 a vast, sparsely populated hot desert illustrating how extreme climates limit population density.",
+          captionZh: "\u963f\u62c9\u4f2f\u6c99\u6f20\u2014\u2014\u5e7f\u9614\u3001\u4eba\u53e3\u7a00\u5c11\u7684\u70ed\u6f20\uff0c\u8bf4\u660e\u6781\u7aef\u6c14\u5019\u5982\u4f55\u9650\u5236\u4eba\u53e3\u5bc6\u5ea6\u3002",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Arabian_Desert_-_panoramio.jpg",
+          source: "Wikimedia Commons",
         },
         {
           type: "source",
@@ -350,9 +352,10 @@ export const asia: Topic = {
         },
         {
           type: "image",
-          caption: "A development map of Asia showing GNI per capita by country.",
-          captionZh: "\u4e9a\u6d32\u53d1\u5c55\u5730\u56fe\uff0c\u663e\u793a\u5404\u56fd\u4eba\u5747GNI\u3002",
-          source: "Placeholder \u2014 image to be added",
+          caption: "Dubai skyline with Burj Khalifa \u2014 a symbol of rapid economic development in a High Income Country.",
+          captionZh: "\u8fea\u62dc\u5929\u9645\u7ebf\u4e0e\u54c8\u5229\u6cd5\u5854\u2014\u2014\u9ad8\u6536\u5165\u56fd\u5feb\u901f\u7ecf\u6d4e\u53d1\u5c55\u7684\u8c61\u5f81\u3002",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Dubai_Skyline_mit_Burj_Khalifa_(18241030269).jpg",
+          source: "Wikimedia Commons",
         },
         {
           type: "source",
@@ -479,9 +482,10 @@ export const asia: Topic = {
         },
         {
           type: "image",
-          caption: "A climate zone map of Asia showing polar, subpolar, temperate, and tropical regions.",
-          captionZh: "\u4e9a\u6d32\u6c14\u5019\u5e26\u5730\u56fe\uff0c\u663e\u793a\u6781\u5730\u3001\u4e9a\u6781\u5730\u3001\u6e29\u5e26\u548c\u70ed\u5e26\u5730\u533a\u3002",
-          source: "Placeholder \u2014 image to be added",
+          caption: "Borneo tropical rainforest \u2014 an example of the tropical climate zone with high rainfall and dense vegetation.",
+          captionZh: "\u5a46\u7f57\u6d32\u70ed\u5e26\u96e8\u6797\u2014\u2014\u9ad8\u964d\u6c34\u91cf\u548c\u8302\u5bc6\u690d\u88ab\u7684\u70ed\u5e26\u6c14\u5019\u5e26\u5178\u578b\u4f8b\u5b50\u3002",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Borneo_rainforest.jpg",
+          source: "Wikimedia Commons",
         },
         {
           type: "source",
@@ -562,7 +566,7 @@ export const asia: Topic = {
             { en: "Territory", zh: "\u9886\u571f", defEn: "Land that is controlled or claimed by a particular country or group.", defZh: "\u7531\u67d0\u4e00\u56fd\u5bb6\u6216\u7fa4\u4f53\u63a7\u5236\u6216\u58f0\u79f0\u62e5\u6709\u7684\u571f\u5730\u3002" },
           ],
         },
-        { type: "image", caption: "A map of Georgia showing natural, political, and disputed borders.", captionZh: "\u683c\u9c81\u5409\u4e9a\u5730\u56fe\uff0c\u5c55\u793a\u81ea\u7136\u3001\u653f\u6cbb\u548c\u4e89\u8bae\u8fb9\u754c\u3002", source: "Placeholder \u2014 image to be added" },
+        { type: "image", caption: "The Himalayas \u2014 Asia\u2019s greatest mountain range, which forms a natural border between India, Nepal, Bhutan, and China.", captionZh: "\u559c\u9a6c\u62c9\u96c5\u5c71\u8109\u2014\u2014\u4e9a\u6d32\u6700\u5927\u5c71\u8109\uff0c\u6784\u6210\u5370\u5ea6\u3001\u5c3c\u6cca\u5c14\u3001\u4e0d\u4e39\u548c\u4e2d\u56fd\u4e4b\u95f4\u7684\u81ea\u7136\u8fb9\u754c\u3002", url: "https://commons.wikimedia.org/wiki/Special:FilePath/Mount_Everest,_Nepal,_Himalayas.jpg", source: "Wikimedia Commons" },
         { type: "source", labelEn: "Geographical Concept", labelZh: "\u5730\u7406\u5b66\u6982\u5ff5", en: "Borders reflect both physical geography and human history. A river or mountain forms a natural border; a peace treaty or colonial decision may divide communities that shared the same land for centuries.", zh: "\u8fb9\u754c\u540c\u65f6\u53cd\u6620\u4e86\u81ea\u7136\u5730\u7406\u548c\u4eba\u7c7b\u5386\u53f2\u3002\u6cb3\u6d41\u6216\u5c71\u8109\u5f62\u6210\u81ea\u7136\u8fb9\u754c\uff1b\u548c\u5e73\u6761\u7ea6\u6216\u6b96\u6c11\u51b3\u5b9a\u53ef\u80fd\u5c06\u5171\u5c45\u51e0\u4e2a\u4e16\u7eaa\u7684\u793e\u7fa4\u5206\u5272\u5f00\u6765\u3002" },
         {
           type: "think",
@@ -624,7 +628,7 @@ export const asia: Topic = {
             { en: "Meltwater", zh: "\u878d\u96ea\u6c34", defEn: "Water produced when snow or ice melts, often feeding rivers downstream.", defZh: "\u96ea\u6216\u51b0\u878d\u5316\u540e\u4ea7\u751f\u7684\u6c34\uff0c\u901a\u5e38\u6d41\u5165\u4e0b\u6e38\u6cb3\u6d41\u3002" },
           ],
         },
-        { type: "image", caption: "The Himalayas, formed by the collision of the Indian and Eurasian plates.", captionZh: "\u559c\u9a6c\u62c9\u96c5\u5c71\u8109\uff0c\u7531\u5370\u5ea6\u677f\u5757\u4e0e\u4e9a\u6b27\u677f\u5757\u78b0\u649e\u5f62\u6210\u3002", source: "Placeholder \u2014 image to be added" },
+        { type: "image", caption: "Mount Everest in the Himalayas \u2014 the world\u2019s highest mountain, formed where the Indian plate collided with the Eurasian plate.", captionZh: "\u559c\u9a6c\u62c9\u96c5\u5c71\u8109\u4e2d\u7684\u73e0\u7a46\u6717\u739b\u5cf0\u2014\u2014\u4e16\u754c\u6700\u9ad8\u5c71\u5cf0\uff0c\u7531\u5370\u5ea6\u677f\u5757\u4e0e\u4e9a\u6b27\u677f\u5757\u78b0\u649e\u5f62\u6210\u3002", url: "https://commons.wikimedia.org/wiki/Special:FilePath/Everest,_Himalayas.jpg", source: "Wikimedia Commons" },
         { type: "source", labelEn: "Key Tectonic Fact", labelZh: "\u91cd\u8981\u677f\u5757\u6784\u9020\u4e8b\u5b9e", en: "The Himalayas are the highest mountain range on Earth, spanning India, Pakistan, Nepal, Bhutan, and China. They were formed where the Indian plate collided with the Eurasian plate, pushing the crust upwards to create fold mountains.", zh: "\u559c\u9a6c\u62c9\u96c5\u5c71\u8109\u662f\u5730\u7403\u4e0a\u6700\u9ad8\u7684\u5c71\u8109\uff0c\u8de8\u8d8a\u5370\u5ea6\u3001\u5df4\u57fa\u65af\u5766\u3001\u5c3c\u6cca\u5c14\u3001\u4e0d\u4e39\u548c\u4e2d\u56fd\u3002\u5b83\u4eec\u5f62\u6210\u4e8e\u5370\u5ea6\u677f\u5757\u4e0e\u4e9a\u6b27\u677f\u5757\u78b0\u649e\u4e4b\u5904\uff0c\u5730\u58f3\u88ab\u63a8\u5411\u4e0a\u65b9\uff0c\u5f62\u6210\u8944\u66f2\u5c71\u3002" },
         {
           type: "think",
@@ -686,7 +690,7 @@ export const asia: Topic = {
             { en: "Volcanic hazard", zh: "\u706b\u5c71\u707e\u5bb3", defEn: "A danger caused by volcanic activity, such as lava flows, ash clouds, or lahars.", defZh: "\u706b\u5c71\u6d3b\u52a8\u5f15\u53d1\u7684\u5371\u9669\uff0c\u5982\u71d5\u6d41\u3001\u706b\u5c71\u7070\u4e91\u6216\u6ce5\u77f3\u6d41\u3002" },
           ],
         },
-        { type: "image", caption: "A relief map and population density map of Japan showing the relationship between terrain and settlement.", captionZh: "\u65e5\u672c\u5730\u5f62\u56fe\u4e0e\u4eba\u53e3\u5bc6\u5ea6\u56fe\uff0c\u5c55\u793a\u5730\u5f62\u4e0e\u5b9a\u5c45\u7684\u5173\u7cfb\u3002", source: "Placeholder \u2014 image to be added" },
+        { type: "image", caption: "Mount Fuji \u2014 Japan\u2019s iconic volcano, formed at a destructive plate boundary where the Pacific plate is subducted beneath the Eurasian plate.", captionZh: "\u5bcc\u58eb\u5c71\u2014\u2014\u65e5\u672c\u6807\u5fd7\u6027\u706b\u5c71\uff0c\u5728\u592a\u5e73\u6d0b\u677f\u5757\u5728\u4e9a\u6b27\u677f\u5757\u4e0b\u65b9\u4e0b\u6c89\u7684\u6d88\u7075\u578b\u677f\u5757\u8fb9\u754c\u5904\u5f62\u6210\u3002", url: "https://commons.wikimedia.org/wiki/Special:FilePath/Chureito_Pagoda_and_Mount_Fuji_(44951842365).jpg", source: "Wikimedia Commons" },
         { type: "source", labelEn: "Key Tectonic Fact", labelZh: "\u91cd\u8981\u677f\u5757\u6784\u9020\u4e8b\u5b9e", en: "Japan is located where the Pacific plate is subducted beneath the Eurasian plate. This destructive boundary creates volcanoes, earthquakes, and ocean trenches \u2014 making Japan one of the most tectonically active nations on Earth.", zh: "\u65e5\u672c\u4f4d\u4e8e\u592a\u5e73\u6d0b\u677f\u5757\u5728\u4e9a\u6b27\u677f\u5757\u4e0b\u65b9\u4e0b\u6c89\u5904\u3002\u8fd9\u4e00\u6d88\u7075\u578b\u8fb9\u754c\u4ea7\u751f\u706b\u5c71\u3001\u5730\u9707\u548c\u6d77\u6c9f\uff0c\u4f7f\u65e5\u672c\u6210\u4e3a\u5730\u7403\u4e0a\u677f\u5757\u6784\u9020\u6d3b\u52a8\u6700\u4e3a\u5f3a\u70c8\u7684\u56fd\u5bb6\u4e4b\u4e00\u3002" },
         {
           type: "think",
@@ -749,7 +753,7 @@ export const asia: Topic = {
             { en: "Comparative writing", zh: "\u5bf9\u6bd4\u5199\u4f5c", defEn: "A style of writing that identifies both similarities and differences between two or more things.", defZh: "\u540c\u65f6\u8bc6\u522b\u4e24\u4e2a\u6216\u591a\u4e2a\u4e8b\u7269\u76f8\u540c\u70b9\u548c\u4e0d\u540c\u70b9\u7684\u5199\u4f5c\u65b9\u5f0f\u3002" },
           ],
         },
-        { type: "image", caption: "Side-by-side comparison of the Himalayas (fold mountains) and Japan (volcanic island arc).", captionZh: "\u559c\u9a6c\u62c9\u96c5\u5c71\u8109\uff08\u8944\u66f2\u5c71\uff09\u4e0e\u65e5\u672c\uff08\u706b\u5c71\u5c9b\u5f27\uff09\u7684\u5bf9\u6bd4\u56fe\u3002", source: "Placeholder \u2014 image to be added" },
+        { type: "image", caption: "The Himalayas \u2014 fold mountains formed at a collision boundary, contrasting with Japan\u2019s volcanic island arc at a destructive boundary.", captionZh: "\u559c\u9a6c\u62c9\u96c5\u5c71\u8109\u2014\u2014\u5728\u78b0\u649e\u578b\u8fb9\u754c\u5f62\u6210\u7684\u8944\u66f2\u5c71\uff0c\u4e0e\u65e5\u672c\u5728\u6d88\u7075\u578b\u8fb9\u754c\u5f62\u6210\u7684\u706b\u5c71\u5c9b\u5f27\u5f62\u6210\u5bf9\u6bd4\u3002", url: "https://commons.wikimedia.org/wiki/Special:FilePath/Himalayas.jpg", source: "Wikimedia Commons" },
         { type: "source", labelEn: "Geographical Comparison", labelZh: "\u5730\u7406\u5bf9\u6bd4", en: "Both the Himalayas and Japan are tectonically active. The Himalayas formed at a collision boundary (two continental plates) and the mountains themselves have low population density. Japan formed at a destructive boundary (oceanic plate subducting) and concentrates most of its population on flat coastal plains.", zh: "\u559c\u9a6c\u62c9\u96c5\u5c71\u8109\u548c\u65e5\u672c\u90fd\u5177\u6709\u677f\u5757\u6784\u9020\u6d3b\u52a8\u6027\u3002\u559c\u9a6c\u62c9\u96c5\u5728\u78b0\u649e\u578b\u8fb9\u754c\uff08\u4e24\u4e2a\u5927\u9646\u677f\u5757\uff09\u5f62\u6210\uff0c\u5c71\u533a\u672c\u8eab\u4eba\u53e3\u5bc6\u5ea6\u8f83\u4f4e\u3002\u65e5\u672c\u5728\u6d88\u7075\u578b\u8fb9\u754c\uff08\u6d77\u6d0b\u677f\u5757\u4e0b\u6c89\uff09\u5f62\u6210\uff0c\u5927\u90e8\u5206\u4eba\u53e3\u96c6\u4e2d\u5728\u5e73\u5766\u6cbf\u6d77\u5730\u533a\u3002" },
         {
           type: "think",
@@ -811,7 +815,7 @@ export const asia: Topic = {
             { en: "Cold desert", zh: "\u51b7\u6f20", defEn: "A desert found at high altitude or far from the tropics, with very low temperatures in winter.", defZh: "\u4f4d\u4e8e\u9ad8\u6d77\u62d4\u6216\u8fdc\u79bb\u70ed\u5e26\u3001\u51ac\u5b63\u6c14\u6e29\u6781\u4f4e\u7684\u6c99\u6f20\u3002" },
           ],
         },
-        { type: "image", caption: "The Arabian Desert (hot) and Gobi Desert (cold) \u2014 two contrasting Asian deserts.", captionZh: "\u963f\u62c9\u4f2f\u6c99\u6f20\uff08\u70ed\u6f20\uff09\u548c\u6208\u58c1\u6c99\u6f20\uff08\u51b7\u6f20\uff09\u2014\u2014\u4e24\u4e2a\u5f62\u6210\u5f3a\u70c8\u5bf9\u6bd4\u7684\u4e9a\u6d32\u6c99\u6f20\u3002", source: "Placeholder \u2014 image to be added" },
+        { type: "image", caption: "The Gobi Desert \u2014 a cold desert spanning China and Mongolia, showing how deserts are defined by low rainfall, not just high temperatures.", captionZh: "\u6208\u58c1\u6c99\u6f20\u2014\u2014\u8de8\u8d8a\u4e2d\u56fd\u548c\u8499\u53e4\u7684\u51b7\u6f20\uff0c\u8bf4\u660e\u6c99\u6f20\u7531\u4f4e\u964d\u6c34\u91cf\u5b9a\u4e49\uff0c\u800c\u975e\u4ec5\u4ec5\u662f\u9ad8\u6e29\u3002", url: "https://commons.wikimedia.org/wiki/Special:FilePath/Gobi_Desert_dunes.jpg", source: "Wikimedia Commons" },
         { type: "source", labelEn: "Geographical Definition", labelZh: "\u5730\u7406\u5b66\u5b9a\u4e49", en: "A desert is defined by its low annual precipitation (under 250 mm), not necessarily by high temperature. This is why the cold Gobi Desert and the hot Arabian Desert are both classified as deserts.", zh: "\u6c99\u6f20\u7684\u5b9a\u4e49\u662f\u5e74\u964d\u6c34\u91cf\u4f4e\uff08\u4e0d\u8db3250\u6beb\u7c73\uff09\uff0c\u800c\u975e\u5fc5\u7136\u662f\u6c14\u6e29\u9ad8\u3002\u8fd9\u5c31\u662f\u4e3a\u4ec0\u4e48\u5bd2\u51b7\u7684\u6208\u58c1\u6c99\u6f20\u548c\u70bd\u70ed\u7684\u963f\u62c9\u4f2f\u6c99\u6f20\u90fd\u5c5e\u4e8e\u6c99\u6f20\u7684\u539f\u56e0\u3002" },
         {
           type: "think",
@@ -873,7 +877,7 @@ export const asia: Topic = {
             { en: "Semi-arid", zh: "\u534a\u5e72\u65f1", defEn: "A climate that is dry but slightly wetter than a full desert, typically with sparse vegetation.", defZh: "\u5e72\u71e5\u4f46\u6bd4\u5b8c\u5168\u7684\u6c99\u6f20\u7565\u6e7f\u4e00\u4e9b\u7684\u6c14\u5019\uff0c\u901a\u5e38\u6709\u7a00\u758f\u690d\u88ab\u3002" },
           ],
         },
-        { type: "image", caption: "The UAE population pyramid showing the impact of international labour migration on age and sex structure.", captionZh: "\u963f\u62c9\u4f2f\u8054\u5408\u914b\u957f\u56fd\u4eba\u53e3\u91d1\u5b57\u5854\uff0c\u663e\u793a\u56fd\u9645\u52b3\u52a8\u529b\u79fb\u6c11\u5bf9\u5e74\u9f84\u548c\u6027\u522b\u7ed3\u6784\u7684\u5f71\u54cd\u3002", source: "Placeholder \u2014 image to be added" },
+        { type: "image", caption: "Dubai skyline \u2014 one of the Middle East\u2019s fastest-growing cities, attracting international labour migrants from across Asia and beyond.", captionZh: "\u8fea\u62dc\u5929\u9645\u7ebf\u2014\u2014\u4e2d\u4e1c\u589e\u957f\u6700\u5feb\u7684\u57ce\u5e02\u4e4b\u4e00\uff0c\u5438\u5f15\u4e86\u6765\u81ea\u4e9a\u6d32\u5404\u5730\u7684\u56fd\u9645\u52b3\u52a8\u529b\u79fb\u6c11\u3002", url: "https://commons.wikimedia.org/wiki/Special:FilePath/Dubai_Skyline_2016.jpg", source: "Wikimedia Commons" },
         { type: "source", labelEn: "Case Study: Dubai pull factors", labelZh: "\u6848\u4f8b\u7814\u7a76\uff1a\u8fea\u62dc\u7684\u62c9\u529b\u56e0\u7d20", en: "Migrants move to Dubai for better-paid jobs, tourism work, oil sector employment, remittances, family opportunities, business start-ups, international schooling, and climate. The UAE\u2019s population pyramid reflects this: working-age men significantly outnumber other groups.", zh: "\u79fb\u6c11\u6d41\u5165\u8fea\u62dc\u7684\u539f\u56e0\u5305\u62ec\uff1a\u6c42\u8584\u5de5\u4f5c\u3001\u65c5\u6e38\u5c31\u4e1a\u3001\u77f3\u6cb9\u884c\u4e1a\u5c31\u4e1a\u3001\u6c47\u6b3e\u6c47\u5165\u3001\u5bb6\u5ead\u53d1\u5c55\u673a\u9047\u3001\u521b\u4e1a\u673a\u4f1a\u3001\u56fd\u9645\u5b66\u6821\u4ee5\u53ca\u6c14\u5019\u3002\u963f\u62c9\u4f2f\u8054\u5408\u914b\u957f\u56fd\u7684\u4eba\u53e3\u91d1\u5b57\u5854\u5c55\u793a\u4e86\u8fd9\u4e00\u70b9\uff1a\u52b3\u52a8\u5e74\u9f84\u7537\u6027\u4eba\u53e3\u8fdc\u8fdc\u8d85\u8fc7\u5176\u4ed6\u7fa4\u4f53\u3002" },
         {
           type: "think",
@@ -936,7 +940,7 @@ export const asia: Topic = {
             { en: "Decomposer", zh: "\u5206\u89e3\u8005", defEn: "An organism such as a fungus or bacterium that breaks down dead organic matter, recycling nutrients.", defZh: "\u771f\u83cc\u6216\u7ec6\u83cc\u7b49\u5c06\u6b7b\u4ea1\u6709\u673a\u7269\u5206\u89e3\u5e76\u5faa\u73af\u5229\u7528\u5176\u4e2d\u517b\u5206\u7684\u751f\u7269\u3002" },
           ],
         },
-        { type: "image", caption: "The layered structure of a tropical rainforest from the emergent layer to the forest floor.", captionZh: "\u70ed\u5e26\u96e8\u6797\u4ece\u7a81\u51fa\u5c42\u5230\u6797\u5730\u7684\u5c42\u6b21\u7ed3\u6784\u793a\u610f\u56fe\u3002", source: "Placeholder \u2014 image to be added" },
+        { type: "image", caption: "Tropical rainforest in Borneo \u2014 showing the dense layered canopy that supports extraordinary biodiversity in Asia\u2019s largest rainforests.", captionZh: "\u5a46\u7f57\u6d32\u70ed\u5e26\u96e8\u6797\u2014\u2014\u5c55\u73b0\u4e9a\u6d32\u6700\u5927\u96e8\u6797\u4e2d\u652f\u6491\u4e30\u5bcc\u751f\u7269\u591a\u6837\u6027\u7684\u7b20\u5bc6\u5c42\u6b21\u6811\u51a0\u3002", url: "https://commons.wikimedia.org/wiki/Special:FilePath/BorneoRainforest_DSC_9267.JPG", source: "Wikimedia Commons" },
         { type: "source", labelEn: "Geographical Fact", labelZh: "\u5730\u7406\u5b66\u4e8b\u5b9e", en: "Tropical rainforests are found in the tropical climate zone near the equator. They receive over 2,000 mm of rainfall per year and have high temperatures throughout the year, making them the most biodiverse biomes on Earth.", zh: "\u70ed\u5e26\u96e8\u6797\u5206\u5e03\u5728\u8d64\u9053\u9644\u8fd1\u7684\u70ed\u5e26\u6c14\u5019\u5e26\u3002\u5b83\u4eec\u6bcf\u5e74\u964d\u6c34\u91cf\u8d85\u8fc72000\u6beb\u7c73\uff0c\u5168\u5e74\u6c14\u6e29\u9ad8\uff0c\u4f7f\u5176\u6210\u4e3a\u5730\u7403\u4e0a\u751f\u7269\u591a\u6837\u6027\u6700\u9ad8\u7684\u751f\u7269\u7fa4\u843d\u3002" },
         {
           type: "think",
@@ -999,7 +1003,7 @@ export const asia: Topic = {
             { en: "Ecotourism", zh: "\u751f\u6001\u65c5\u6e38", defEn: "Tourism focused on natural environments that aims to be sustainable and benefit local communities.", defZh: "\u4ee5\u81ea\u7136\u73af\u5883\u4e3a\u91cd\u70b9\u3001\u65e8\u5728\u53ef\u6301\u7eed\u5e76\u60e0\u53ca\u5f53\u5730\u793e\u533a\u7684\u65c5\u6e38\u3002" },
           ],
         },
-        { type: "image", caption: "A rainforest in Borneo \u2014 Indonesia and Malaysia both have major rainforest areas on this island.", captionZh: "\u5a46\u7f57\u6d32\u70ed\u5e26\u96e8\u6797\u2014\u2014\u5370\u5ea6\u5c3c\u897f\u4e9a\u548c\u9a6c\u6765\u897f\u4e9a\u5728\u8fd9\u4e2a\u5c9b\u5c7f\u4e0a\u90fd\u6709\u91cd\u8981\u7684\u96e8\u6797\u5730\u533a\u3002", source: "Placeholder \u2014 image to be added" },
+        { type: "image", caption: "Rainforest in Borneo \u2014 Indonesia and Malaysia both have major rainforest areas on this island, providing economic, social, and environmental benefits.", captionZh: "\u5a46\u7f57\u6d32\u70ed\u5e27\u96e8\u6797\u2014\u2014\u5370\u5ea6\u5c3c\u897f\u4e9a\u548c\u9a6c\u6765\u897f\u4e9a\u5728\u8fd9\u4e2a\u5c9b\u5c7f\u4e0a\u90fd\u6709\u91cd\u8981\u7684\u96e8\u6797\u5730\u533a\uff0c\u63d0\u4f9b\u7ecf\u6d4e\u3001\u793e\u4f1a\u548c\u73af\u5883\u6548\u76ca\u3002", url: "https://commons.wikimedia.org/wiki/Special:FilePath/Borneo_rainforest.jpg", source: "Wikimedia Commons" },
         { type: "source", labelEn: "Geographical Evaluation", labelZh: "\u5730\u7406\u5b66\u8bc4\u4f30", en: "Rainforests provide economic benefits (timber, palm oil, tourism), social benefits (medicines, livelihoods), and environmental benefits (biodiversity, carbon storage). Countries like Indonesia and Malaysia must weigh all three to make sustainable decisions.", zh: "\u70ed\u5e27\u96e8\u6797\u63d0\u4f9b\u7ecf\u6d4e\u6548\u76ca\uff08\u6728\u6750\u3001\u68d5\u6988\u6cb9\u3001\u65c5\u6e38\uff09\u3001\u793e\u4f1a\u6548\u76ca\uff08\u836f\u7269\u3001\u751f\u8ba1\u6765\u6e90\uff09\u548c\u73af\u5883\u6548\u76ca\uff08\u751f\u7269\u591a\u6837\u6027\u3001\u78b3\u8d54\u5b58\u50a8\uff09\u3002\u5370\u5ea6\u5c3c\u897f\u4e9a\u548c\u9a6c\u6765\u897f\u4e9a\u7b49\u56fd\u5fc5\u987b\u6743\u8861\u4e09\u8005\uff0c\u4e5f\u5f53\u505a\u51fa\u53ef\u6301\u7eed\u7684\u51b3\u7b56\u3002" },
         {
           type: "think",

@@ -5,6 +5,10 @@ import { humanRights } from "@/data/human-rights";
 import { atlanticSlaveTrade } from "@/data/atlantic-slave-trade";
 import { britishEmpire } from "@/data/british-empire";
 import { usCivilRights } from "@/data/us-civil-rights";
+import asia from "@/data/asia";
+import asiaEconomicBoom from "@/data/asia-economic-boom";
+import weatherClimate from "@/data/weather-climate";
+import tourism from "@/data/tourism";
 import { Topic, LessonSection } from "@/data/types";
 
 type ImageTask = {
@@ -166,7 +170,7 @@ export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
   const showStatus = searchParams.get("status") === "1";
 
-  const topics: Topic[] = [humanRights, atlanticSlaveTrade, britishEmpire, usCivilRights];
+  const topics: Topic[] = [humanRights, atlanticSlaveTrade, britishEmpire, usCivilRights, asia, asiaEconomicBoom, weatherClimate, tourism];
   const allTasks = collectImageTasks(topics);
 
   // ── Status mode ──

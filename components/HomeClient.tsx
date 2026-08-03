@@ -83,6 +83,10 @@ export default function HomeClient({ liveBySubject }: Props) {
         <span className="text-[14px] font-medium text-gray-300 truncate">
           {t("Study Notes", "\u5b66\u4e60\u7b14\u8bb0")}
         </span>
+        <span className="text-gray-700 mx-1">&middot;</span>
+        <span className="text-[13px] text-gray-500">
+          {t("Year 8", "\u516b\u5e74\u7ea7")}
+        </span>
 
       </header>
 

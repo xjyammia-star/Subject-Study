@@ -6,7 +6,7 @@ import SubjectClient from "@/components/SubjectClient";
 
 export const revalidate = 60;
 
-const validSubjects = ["history", "geography"];
+const validSubjects = ["history", "geography", "science"];
 
 export default async function SubjectPage({
   params,

@@ -68,13 +68,11 @@ interface Props {
 export default function HomeClient({ liveBySubject }: Props) {
   const [lang, setLang] = useState<Lang>("en");
 
-  // Read language from localStorage on mount
   useEffect(() => {
     const saved = localStorage.getItem(LANG_KEY);
     if (saved === "zh") setLang("zh");
   }, []);
 
-  // Listen for global language changes
   useEffect(() => {
     const handler = (e: Event) => {
       setLang((e as CustomEvent<Lang>).detail);

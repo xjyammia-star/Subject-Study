@@ -1,4 +1,4 @@
-// 放到: components/HomeClient.tsx
+// 路径: components/HomeClient.tsx
 "use client";
 
 import { useEffect, useState } from "react";
@@ -43,6 +43,18 @@ const subjectConfig: Record<string, {
     accentText: "text-emerald-400",
     accentBg: "bg-emerald-500/10",
   },
+  Science: {
+    icon: "\u{1F52C}",
+    label: "Science",
+    labelZh: "\u79d1\u5b66",
+    description: "Physics, chemistry, and biology — how the world works.",
+    descriptionZh: "\u7269\u7406\u3001\u5316\u5b66\u4e0e\u751f\u7269\u2014\u2014\u63a2\u7d22\u4e16\u754c\u8fd0\u884c\u7684\u539f\u7406\u3002",
+    color: "from-violet-900/20 to-surface-1",
+    borderColor: "border-violet-800/40 hover:border-violet-600/70",
+    dotColor: "bg-violet-500",
+    accentText: "text-violet-400",
+    accentBg: "bg-violet-500/10",
+  },
 };
 
 const comingSoonTopicCounts: Record<string, number> = {
@@ -83,7 +95,7 @@ export default function HomeClient({ liveBySubject }: Props) {
           S
         </div>
         <span className="text-[14px] font-medium text-gray-300">
-          {t("Study Portal", "\u5b66\u4e60\u4e2d\u5fc3")}
+          {t("Study Notes", "\u5b66\u4e60\u7b14\u8bb0")}
         </span>
         <span className="text-gray-700 mx-1">&middot;</span>
         <span className="text-[13px] text-gray-500">
@@ -202,6 +214,13 @@ export default function HomeClient({ liveBySubject }: Props) {
           )}
         </div>
       </main>
+
+      {/* Footer */}
+      <footer className="border-t border-border px-8 py-4 text-center">
+        <span className="text-[12px] text-gray-600">
+          {t("\u5b66\u4e60\u7b14\u8bb0 \u00b7 Year 8", "\u5b66\u4e60\u7b14\u8bb0 \u00b7 \u516b\u5e74\u7ea7")}
+        </span>
+      </footer>
     </div>
   );
 }

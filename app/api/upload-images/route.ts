@@ -1,3 +1,4 @@
+// 路径: app/api/upload-images/route.ts
 import { NextResponse } from "next/server";
 import { put } from "@vercel/blob";
 import { sql } from "@vercel/postgres";
@@ -9,6 +10,7 @@ import asia from "@/data/asia";
 import asiaEconomicBoom from "@/data/asia-economic-boom";
 import weatherClimate from "@/data/weather-climate";
 import tourism from "@/data/tourism";
+import { heatingCooling } from "@/data/heating-cooling";
 import { Topic, LessonSection } from "@/data/types";
 
 type ImageTask = {
@@ -35,7 +37,6 @@ function collectImageTasks(topics: Topic[]): ImageTask[] {
         let ext = "jpg";
 
         if (section.wikimediaFile) {
-          // New format: wikimediaFile field
           sourceUrl = wikimediaUrl(section.wikimediaFile);
           const rawExt = section.wikimediaFile.split(".").pop() ?? "jpg";
           ext = ["jpg", "jpeg", "png", "webp", "gif", "svg"].includes(
@@ -44,7 +45,6 @@ function collectImageTasks(topics: Topic[]): ImageTask[] {
             ? rawExt.toLowerCase()
             : "jpg";
         } else if (section.url) {
-          // Old format: direct url field (skip if already a Blob URL)
           if (
             section.url.startsWith("/") ||
             section.url.includes("vercel-storage.com")
@@ -137,7 +137,6 @@ async function getPendingTasks(
   topics: Topic[],
   allTasks: ImageTask[]
 ): Promise<ImageTask[]> {
-  // Build a set of "topicSlug:lessonNum" that already have a Blob URL
   const doneSet = new Set<string>();
 
   for (const topic of topics) {
@@ -160,7 +159,6 @@ async function getPendingTasks(
     }
   }
 
-  // Return tasks not yet in doneSet
   return allTasks.filter(
     (t) => !doneSet.has(`${t.topicSlug}:${t.lessonNum}`)
   );
@@ -170,7 +168,11 @@ export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
   const showStatus = searchParams.get("status") === "1";
 
-  const topics: Topic[] = [humanRights, atlanticSlaveTrade, britishEmpire, usCivilRights, asia, asiaEconomicBoom, weatherClimate, tourism];
+  const topics: Topic[] = [
+    humanRights, atlanticSlaveTrade, britishEmpire, usCivilRights,
+    asia, asiaEconomicBoom, weatherClimate, tourism,
+    heatingCooling,
+  ];
   const allTasks = collectImageTasks(topics);
 
   // ── Status mode ──
@@ -209,7 +211,7 @@ export async function GET(request: Request) {
   }
 
   // ── Force mode: ?force=topicSlug:lessonNum ──
-  const forceParam = searchParams.get("force"); // e.g. "human-rights:1"
+  const forceParam = searchParams.get("force");
   if (forceParam) {
     const [forceSlug, forceNumStr] = forceParam.split(":");
     const forceNum = parseInt(forceNumStr, 10);
@@ -217,7 +219,10 @@ export async function GET(request: Request) {
       (t) => t.topicSlug === forceSlug && t.lessonNum === forceNum
     );
     if (!task) {
-      return NextResponse.json({ success: false, error: `Task not found: ${forceParam}` }, { status: 404 });
+      return NextResponse.json(
+        { success: false, error: `Task not found: ${forceParam}` },
+        { status: 404 }
+      );
     }
     try {
       const result = await uploadOne(task);

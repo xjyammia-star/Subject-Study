@@ -1,3 +1,4 @@
+// 路径: app/api/seed/route.ts
 import { NextResponse } from "next/server";
 import { createTables, insertTopic, insertLesson } from "@/lib/db";
 import { humanRights } from "@/data/human-rights";
@@ -10,6 +11,7 @@ import { asiaEconomicBoom } from "@/data/asia-economic-boom";
 import { weatherClimate } from "@/data/weather-climate";
 import { tourism } from "@/data/tourism";
 import { geographyLearningCheck } from "@/data/geography-learning-check";
+import { heatingCooling } from "@/data/heating-cooling";
 import { Topic } from "@/data/types";
 
 async function seedTopic(topic: Topic, log: string[]): Promise<void> {
@@ -33,6 +35,7 @@ export async function GET() {
     const topics: Topic[] = [
       humanRights, atlanticSlaveTrade, britishEmpire, usCivilRights, learningCheck,
       asia, asiaEconomicBoom, weatherClimate, tourism, geographyLearningCheck,
+      heatingCooling,
     ];
 
     for (const topic of topics) {

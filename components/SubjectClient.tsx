@@ -38,6 +38,16 @@ const subjectConfig: Record<string, {
     accentBg: "bg-emerald-500/10",
     headerColor: "text-emerald-400",
   },
+  science: {
+    icon: "\u{1F52C}",
+    labelZh: "\u79d1\u5b66",
+    color: "from-violet-900/20 to-surface-1",
+    borderColor: "border-violet-800/40 hover:border-violet-600/60",
+    dotColor: "bg-violet-500",
+    accentText: "text-violet-400",
+    accentBg: "bg-violet-500/10",
+    headerColor: "text-violet-400",
+  },
 };
 
 const comingSoonTopics: Record<string, { name: string; nameZh: string }[]> = {};
@@ -75,15 +85,15 @@ export default function SubjectClient({ subjectKey, subjectLabel, liveTopics }: 
           S
         </div>
         <span className="text-[14px] font-medium text-gray-300">
-          {t("Study Portal", "\u5b66\u4e60\u4e2d\u5fc3")}
+          {t("Study Notes", "\u5b66\u4e60\u7b14\u8bb0")}
         </span>
         <span className="text-gray-700 mx-1">&middot;</span>
         <Link href="/" className="text-[13px] text-gray-500 hover:text-gray-300 transition-colors">
           {t("Year 8", "\u516b\u5e74\u7ea7")}
         </Link>
         <span className="text-gray-700 mx-1">&middot;</span>
-        <span className={`text-[13px] font-medium ${cfg.headerColor}`}>
-          {t(subjectLabel, cfg.labelZh)}
+        <span className={`text-[13px] font-medium ${cfg?.headerColor ?? "text-gray-400"}`}>
+          {t(subjectLabel, cfg?.labelZh ?? subjectLabel)}
         </span>
       </header>
 
@@ -103,9 +113,9 @@ export default function SubjectClient({ subjectKey, subjectLabel, liveTopics }: 
 
           <div className="mb-10">
             <div className="flex items-center gap-3 mb-2">
-              <span className="text-[28px]">{cfg.icon}</span>
+              <span className="text-[28px]">{cfg?.icon}</span>
               <h1 className="text-[28px] font-semibold text-gray-100 font-voice">
-                {t(subjectLabel, cfg.labelZh)}
+                {t(subjectLabel, cfg?.labelZh ?? subjectLabel)}
               </h1>
             </div>
             <p className="text-gray-500 text-[14px]">
@@ -118,10 +128,10 @@ export default function SubjectClient({ subjectKey, subjectLabel, liveTopics }: 
               <Link
                 key={topic.slug}
                 href={`/${topic.slug}`}
-                className={`group relative block bg-gradient-to-br ${cfg.color} border ${cfg.borderColor} rounded-xl p-5 transition-all duration-200`}
+                className={`group relative block bg-gradient-to-br ${cfg?.color ?? "from-gray-900/20 to-surface-1"} border ${cfg?.borderColor ?? "border-gray-800/40"} rounded-xl p-5 transition-all duration-200`}
               >
                 <div className="flex items-center gap-1.5 mb-3">
-                  <div className={`w-1.5 h-1.5 rounded-full ${cfg.dotColor}`} />
+                  <div className={`w-1.5 h-1.5 rounded-full ${cfg?.dotColor ?? "bg-gray-500"}`} />
                   <span className="text-[11px] text-gray-500">
                     {topic.lessons.length} {t("lessons", "\u8bfe")}
                   </span>
@@ -129,7 +139,7 @@ export default function SubjectClient({ subjectKey, subjectLabel, liveTopics }: 
                 <div className="text-[16px] font-medium text-gray-100 group-hover:text-white transition-colors leading-snug font-voice">
                   {t(topic.name, topic.nameZh)}
                 </div>
-                <div className={`mt-4 flex items-center gap-1 text-[12px] ${cfg.accentText} opacity-60 group-hover:opacity-100 transition-opacity`}>
+                <div className={`mt-4 flex items-center gap-1 text-[12px] ${cfg?.accentText ?? "text-gray-400"} opacity-60 group-hover:opacity-100 transition-opacity`}>
                   {t("Start revising", "\u5f00\u59cb\u590d\u4e60")}
                   <svg className="w-3 h-3 group-hover:translate-x-0.5 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
@@ -161,7 +171,7 @@ export default function SubjectClient({ subjectKey, subjectLabel, liveTopics }: 
 
           {liveTopics.length === 0 && comingSoon.length === 0 && (
             <div className="text-center py-16 text-gray-600">
-              <p>{t(`No topics found for ${subjectLabel}.`, `\u672a\u627e\u5230${cfg.labelZh}\u7684\u4e3b\u9898\u3002`)}</p>
+              <p>{t(`No topics found for ${subjectLabel}.`, `\u672a\u627e\u5230${cfg?.labelZh ?? subjectLabel}\u7684\u4e3b\u9898\u3002`)}</p>
             </div>
           )}
         </div>

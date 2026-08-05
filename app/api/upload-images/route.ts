@@ -11,6 +11,7 @@ import asiaEconomicBoom from "@/data/asia-economic-boom";
 import weatherClimate from "@/data/weather-climate";
 import tourism from "@/data/tourism";
 import { heatingCooling } from "@/data/heating-cooling";
+import { chemicalReactions } from "@/data/chemical-reactions";
 import { Topic, LessonSection } from "@/data/types";
 
 type ImageTask = {
@@ -172,6 +173,7 @@ export async function GET(request: Request) {
     humanRights, atlanticSlaveTrade, britishEmpire, usCivilRights,
     asia, asiaEconomicBoom, weatherClimate, tourism,
     heatingCooling,
+    chemicalReactions,
   ];
   const allTasks = collectImageTasks(topics);
 

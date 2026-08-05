@@ -700,7 +700,7 @@ export const heatingCooling: Topic = {
             { en: "The type of metal rod used.", zh: "\u6240\u7528\u91d1\u5c5e\u68d2\u7684\u7c7b\u578b\u3002" },
             { en: "The length of the metal rod.", zh: "\u91d1\u5c5e\u68d2\u7684\u957f\u5ea6\u3002" },
             { en: "The time taken for the wax to melt or the pin to drop.", zh: "\u8721\u878d\u5316\u6216\u56fe\u9489\u843d\u4e0b\u6240\u9700\u7684\u65f6\u95f4\u3002" },
-            { en: "The temperature of the Bunsen burner.", zh: "\u本\u751f\u706f\u7684\u6e29\u5ea6\u3002" },
+            { en: "The temperature of the Bunsen burner.", zh: "\u672c\u751f\u706f\u7684\u6e29\u5ea6\u3002" },
           ],
           correct: 2,
           explainCorrectEn: "Correct. The dependent variable is what you measure — in this case, the time taken for the wax to melt or the pin to drop. This is the outcome that changes in response to which material is used.",

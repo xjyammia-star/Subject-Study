@@ -665,7 +665,7 @@ export const heatingCooling: Topic = {
     /* ========== Lesson 6 ========== */
     {
       num: 6,
-      badge: "P",
+      badge: "E",
       title: "Conduction — Key Practical",
       titleZh: "\u4f20\u5bfc\u5b9e\u9a8c",
       subtitle: "Which material conducts heat the best?",

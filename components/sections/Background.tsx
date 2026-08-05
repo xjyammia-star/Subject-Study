@@ -2,6 +2,7 @@
 
 import { IntroSection } from "@/data/types";
 import { Lang, t, labels } from "@/lib/i18n";
+import { renderChem } from "@/lib/renderChem";
 
 interface Props {
   section: IntroSection;
@@ -20,28 +21,22 @@ export default function Background({ section, lang }: Props) {
           if (block.type === "text") {
             return (
               <p key={i} className="text-[15px] text-gray-300 leading-[1.8]">
-                {t(lang, block.en, block.zh)}
+                {renderChem(t(lang, block.en, block.zh))}
               </p>
             );
           }
           if (block.type === "highlight") {
             return (
-              <div
-                key={i}
-                className="bg-highlight-bg border-l-[3px] border-highlight-border rounded-r-lg px-4 py-3 text-[15px] text-gray-200 leading-[1.8]"
-              >
-                {t(lang, block.en, block.zh)}
+              <div key={i} className="bg-highlight-bg border-l-[3px] border-highlight-border rounded-r-lg px-4 py-3 text-[15px] text-gray-200 leading-[1.8]">
+                {renderChem(t(lang, block.en, block.zh))}
               </div>
             );
           }
           if (block.type === "example") {
             return (
-              <div
-                key={i}
-                className="bg-example-bg border-l-[3px] border-example-border rounded-r-lg px-4 py-3 text-[15px] text-gray-300 leading-[1.8] flex items-start gap-2"
-              >
+              <div key={i} className="bg-example-bg border-l-[3px] border-example-border rounded-r-lg px-4 py-3 text-[15px] text-gray-300 leading-[1.8] flex items-start gap-2">
                 <span className="shrink-0 mt-0.5">💡</span>
-                <span>{t(lang, block.en, block.zh)}</span>
+                <span>{renderChem(t(lang, block.en, block.zh))}</span>
               </div>
             );
           }

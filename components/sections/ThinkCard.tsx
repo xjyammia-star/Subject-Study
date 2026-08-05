@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { ThinkSection } from "@/data/types";
 import { Lang, t, labels } from "@/lib/i18n";
+import { renderChem } from "@/lib/renderChem";
 
 interface Props {
   section: ThinkSection;
@@ -26,16 +27,13 @@ export default function ThinkCard({ section, lang }: Props) {
         {section.questions.map((q, i) => {
           const isOpen = openIndex === i;
           return (
-            <div
-              key={i}
-              className="bg-surface-3 border border-border rounded-lg p-4"
-            >
+            <div key={i} className="bg-surface-3 border border-border rounded-lg p-4">
               <div className="text-[12px] font-medium text-gray-500 uppercase tracking-wider flex items-center gap-1 mb-2">
                 <span>❓</span>
                 {t(lang, labels.thinkAbout.en, labels.thinkAbout.zh)}
               </div>
               <p className="text-[15px] text-gray-200 leading-[1.7] mb-3">
-                {t(lang, q.qEn, q.qZh)}
+                {renderChem(t(lang, q.qEn, q.qZh))}
               </p>
               <button
                 onClick={() => toggle(i)}
@@ -50,7 +48,7 @@ export default function ThinkCard({ section, lang }: Props) {
               </button>
               {isOpen && (
                 <div className="mt-3 pt-3 border-t border-border text-[15px] text-gray-400 leading-[1.8]">
-                  {t(lang, q.aEn, q.aZh)}
+                  {renderChem(t(lang, q.aEn, q.aZh))}
                 </div>
               )}
             </div>

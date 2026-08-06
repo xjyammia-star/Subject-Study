@@ -207,7 +207,7 @@ export const healthDisease: Topic = {
     /* ========== Lesson 5 ========== */
     {
       num: 5,
-      badge: "P",
+      badge: "A",
       title: "Antibacterials Practical",
       titleZh: "\u6297\u83cc\u5242\u5b9e\u9a8c",
       subtitle: "How can we test which antibacterial is most effective?",

@@ -2,6 +2,7 @@
 
 import { SourceSection } from "@/data/types";
 import { Lang, t } from "@/lib/i18n";
+import { renderChem } from "@/lib/renderChem";
 
 interface Props {
   section: SourceSection;
@@ -16,7 +17,7 @@ export default function SourceBox({ section, lang }: Props) {
         {t(lang, section.labelEn, section.labelZh)}
       </div>
       <div className="bg-source-bg border-l-[3px] border-source-border rounded-r-lg px-5 py-4 text-[15px] text-source-text leading-[1.8] italic">
-        {t(lang, section.en, section.zh)}
+        {renderChem(t(lang, section.en, section.zh))}
       </div>
     </div>
   );

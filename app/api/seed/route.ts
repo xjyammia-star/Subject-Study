@@ -13,6 +13,7 @@ import { tourism } from "@/data/tourism";
 import { geographyLearningCheck } from "@/data/geography-learning-check";
 import { heatingCooling } from "@/data/heating-cooling";
 import { chemicalReactions } from "@/data/chemical-reactions";
+import { healthDisease } from "@/data/health-disease";
 import { Topic } from "@/data/types";
 
 async function seedTopic(topic: Topic, log: string[]): Promise<void> {
@@ -38,6 +39,7 @@ export async function GET() {
       asia, asiaEconomicBoom, weatherClimate, tourism, geographyLearningCheck,
       heatingCooling,
       chemicalReactions,
+      healthDisease,
     ];
 
     for (const topic of topics) {

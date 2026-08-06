@@ -12,6 +12,7 @@ import weatherClimate from "@/data/weather-climate";
 import tourism from "@/data/tourism";
 import { heatingCooling } from "@/data/heating-cooling";
 import { chemicalReactions } from "@/data/chemical-reactions";
+import { healthDisease } from "@/data/health-disease";
 import { Topic, LessonSection } from "@/data/types";
 
 type ImageTask = {
@@ -174,6 +175,7 @@ export async function GET(request: Request) {
     asia, asiaEconomicBoom, weatherClimate, tourism,
     heatingCooling,
     chemicalReactions,
+    healthDisease,
   ];
   const allTasks = collectImageTasks(topics);
 

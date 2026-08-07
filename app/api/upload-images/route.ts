@@ -13,6 +13,7 @@ import tourism from "@/data/tourism";
 import { heatingCooling } from "@/data/heating-cooling";
 import { chemicalReactions } from "@/data/chemical-reactions";
 import { healthDisease } from "@/data/health-disease";
+import environmentalScience from "@/data/environmental-science";
 import { Topic, LessonSection } from "@/data/types";
 
 type ImageTask = {
@@ -176,6 +177,7 @@ export async function GET(request: Request) {
     heatingCooling,
     chemicalReactions,
     healthDisease,
+    environmentalScience,
   ];
   const allTasks = collectImageTasks(topics);
 

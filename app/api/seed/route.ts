@@ -14,6 +14,7 @@ import { geographyLearningCheck } from "@/data/geography-learning-check";
 import { heatingCooling } from "@/data/heating-cooling";
 import { chemicalReactions } from "@/data/chemical-reactions";
 import { healthDisease } from "@/data/health-disease";
+import environmentalScience from "@/data/environmental-science";
 import { Topic } from "@/data/types";
 
 async function seedTopic(topic: Topic, log: string[]): Promise<void> {
@@ -40,6 +41,7 @@ export async function GET() {
       heatingCooling,
       chemicalReactions,
       healthDisease,
+      environmentalScience,
     ];
 
     for (const topic of topics) {

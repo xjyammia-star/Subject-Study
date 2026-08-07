@@ -12,6 +12,7 @@ import { geographyLearningCheck } from "./geography-learning-check";
 import { heatingCooling } from "./heating-cooling";
 import { chemicalReactions } from "./chemical-reactions";
 import { healthDisease } from "./health-disease";
+import environmentalScience from "./environmental-science";
 
 /** All available topics, keyed by slug */
 export const topics: Record<string, Topic> = {
@@ -28,11 +29,12 @@ export const topics: Record<string, Topic> = {
   "heating-cooling": heatingCooling,
   "chemical-reactions": chemicalReactions,
   "health-disease": healthDisease,
+  "environmental-science": environmentalScience,
 };
 
 /** Ordered list for the home page */
 export const topicList = [
   humanRights, atlanticSlaveTrade, britishEmpire, usCivilRights, learningCheck,
   asia, asiaEconomicBoom, weatherClimate, tourism, geographyLearningCheck,
-  heatingCooling, chemicalReactions, healthDisease,
+  heatingCooling, chemicalReactions, healthDisease, environmentalScience,
 ];

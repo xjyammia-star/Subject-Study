@@ -15,6 +15,7 @@ import { heatingCooling } from "@/data/heating-cooling";
 import { chemicalReactions } from "@/data/chemical-reactions";
 import { healthDisease } from "@/data/health-disease";
 import environmentalScience from "@/data/environmental-science";
+import electricityMagnetism from "@/data/electricity-magnetism";
 import { Topic } from "@/data/types";
 
 async function seedTopic(topic: Topic, log: string[]): Promise<void> {
@@ -42,6 +43,7 @@ export async function GET() {
       chemicalReactions,
       healthDisease,
       environmentalScience,
+      electricityMagnetism,
     ];
 
     for (const topic of topics) {

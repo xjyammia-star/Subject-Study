@@ -429,7 +429,3 @@ const environmentalScience: Topic = {
 };
 
 export default environmentalScience;
-
-};
-
-export default environmentalScience;

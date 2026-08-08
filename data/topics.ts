@@ -14,6 +14,7 @@ import { chemicalReactions } from "./chemical-reactions";
 import { healthDisease } from "./health-disease";
 import environmentalScience from "./environmental-science";
 import electricityMagnetism from "./electricity-magnetism";
+import bodySystems from "./body-systems";
 
 /** All available topics, keyed by slug */
 export const topics: Record<string, Topic> = {
@@ -32,6 +33,7 @@ export const topics: Record<string, Topic> = {
   "health-disease": healthDisease,
   "environmental-science": environmentalScience,
   "electricity-magnetism": electricityMagnetism,
+  "body-systems": bodySystems,
 };
 
 /** Ordered list for the home page */
@@ -39,5 +41,5 @@ export const topicList = [
   humanRights, atlanticSlaveTrade, britishEmpire, usCivilRights, learningCheck,
   asia, asiaEconomicBoom, weatherClimate, tourism, geographyLearningCheck,
   heatingCooling, chemicalReactions, healthDisease, environmentalScience,
-  electricityMagnetism,
+  electricityMagnetism, bodySystems,
 ];

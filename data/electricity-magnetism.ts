@@ -166,10 +166,6 @@ const electricityMagnetism: Topic = {
       ],
     },
 
-  ], // end lessons
-}; // end const
-
-export default electricityMagnetism;
 
     /* ========== Lesson 4 ========== */
     {

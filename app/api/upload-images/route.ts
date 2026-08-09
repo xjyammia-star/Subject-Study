@@ -16,6 +16,7 @@ import { healthDisease } from "@/data/health-disease";
 import environmentalScience from "@/data/environmental-science";
 import electricityMagnetism from "@/data/electricity-magnetism";
 import bodySystems from "@/data/body-systems";
+import ks3Symposium from "@/data/ks3-symposium";
 import { Topic, LessonSection } from "@/data/types";
 
 type ImageTask = {
@@ -182,6 +183,7 @@ export async function GET(request: Request) {
     environmentalScience,
     electricityMagnetism,
     bodySystems,
+    ks3Symposium,
   ];
   const allTasks = collectImageTasks(topics);
 

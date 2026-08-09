@@ -15,6 +15,7 @@ import { healthDisease } from "./health-disease";
 import environmentalScience from "./environmental-science";
 import electricityMagnetism from "./electricity-magnetism";
 import bodySystems from "./body-systems";
+import ks3Symposium from "./ks3-symposium";
 
 /** All available topics, keyed by slug */
 export const topics: Record<string, Topic> = {
@@ -34,6 +35,7 @@ export const topics: Record<string, Topic> = {
   "environmental-science": environmentalScience,
   "electricity-magnetism": electricityMagnetism,
   "body-systems": bodySystems,
+  "ks3-symposium": ks3Symposium,
 };
 
 /** Ordered list for the home page */
@@ -41,5 +43,5 @@ export const topicList = [
   humanRights, atlanticSlaveTrade, britishEmpire, usCivilRights, learningCheck,
   asia, asiaEconomicBoom, weatherClimate, tourism, geographyLearningCheck,
   heatingCooling, chemicalReactions, healthDisease, environmentalScience,
-  electricityMagnetism, bodySystems,
+  electricityMagnetism, bodySystems, ks3Symposium,
 ];

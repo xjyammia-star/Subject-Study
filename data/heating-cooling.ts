@@ -406,8 +406,8 @@ export const heatingCooling: Topic = {
         },
         {
           type: "image",
-          caption: "A thermometer showing liquid expanding up the capillary tube as temperature rises",
-          captionZh: "\u6e29\u5ea6\u8ba1\u663e\u793a\u6e29\u5ea6\u5347\u9ad8\u65f6\u6db2\u4f53\u5728\u6bdb\u7ec6\u7ba1\u4e2d\u81a8\u80c0\u4e0a\u5347",
+          caption: "A thermometer showing both Celsius and Fahrenheit scales — used to measure temperature accurately",
+          captionZh: "\u663e\u793a\u6444\u6c0f\u5ea6\u548c\u534e\u6c0f\u5ea6\u5237\u5ea6\u7684\u6e29\u5ea6\u8ba1\u2014\u2014\u7528\u4e8e\u51c6\u786e\u6d4b\u91cf\u6e29\u5ea6",
           source: "Wikimedia Commons",
           wikimediaFile: "Thermometer_CF.svg",
         },

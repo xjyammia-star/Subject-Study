@@ -133,14 +133,18 @@ export default function SubjectClient({ subjectKey, subjectLabel, liveTopics }: 
                 <div className="flex items-center gap-1.5 mb-3">
                   <div className={`w-1.5 h-1.5 rounded-full ${cfg?.dotColor ?? "bg-gray-500"}`} />
                   <span className="text-[11px] text-gray-500">
-                    {topic.lessons.length} {t("lessons", "\u8bfe")}
+                    {topic.slug === "ks3-symposium"
+                      ? t("Project", "\u9879\u76ee")
+                      : `${topic.lessons.length} ${t("lessons", "\u8bfe")}`}
                   </span>
                 </div>
                 <div className="text-[16px] font-medium text-gray-100 group-hover:text-white transition-colors leading-snug font-voice">
                   {t(topic.name, topic.nameZh)}
                 </div>
                 <div className={`mt-4 flex items-center gap-1 text-[12px] ${cfg?.accentText ?? "text-gray-400"} opacity-60 group-hover:opacity-100 transition-opacity`}>
-                  {t("Start revising", "\u5f00\u59cb\u590d\u4e60")}
+                  {topic.slug === "ks3-symposium"
+                    ? t("View brief", "\u67e5\u770b\u4efb\u52a1\u4e66")
+                    : t("Start revising", "\u5f00\u59cb\u590d\u4e60")}
                   <svg className="w-3 h-3 group-hover:translate-x-0.5 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
                   </svg>

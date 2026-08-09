@@ -480,7 +480,7 @@ const bodySystems: Topic = {
 
     /* ========== Lesson 11 ========== */
     {
-      num: 11,
+      num: 10,
       badge: "T",
       title: "The Respiratory System",
       titleZh: "\u547c\u5438\u7cfb\u7edf",

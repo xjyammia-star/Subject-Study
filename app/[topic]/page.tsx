@@ -1,4 +1,4 @@
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import { getTopicBySlug, getAllTopicSlugs } from "@/lib/db";
 import TopicPage from "@/components/TopicPage";
 
@@ -9,7 +9,15 @@ interface PageProps {
 /** Re-fetch from DB every 60 seconds at most */
 export const revalidate = 60;
 
+/** Slugs that have their own standalone pages — skip dynamic rendering */
+const STANDALONE_SLUGS = ["ks3-symposium"];
+
 export default async function TopicRoute({ params }: PageProps) {
+  // Redirect standalone topics to their own pages
+  if (STANDALONE_SLUGS.includes(params.topic)) {
+    redirect(`/${params.topic}`);
+  }
+
   let topic;
   try {
     topic = await getTopicBySlug(params.topic);
@@ -32,11 +40,13 @@ export default async function TopicRoute({ params }: PageProps) {
   return <TopicPage topic={topic} />;
 }
 
-/** Pre-generate known topic pages */
+/** Pre-generate known topic pages — exclude standalone slugs */
 export async function generateStaticParams() {
   try {
     const slugs = await getAllTopicSlugs();
-    return slugs.map((slug) => ({ topic: slug }));
+    return slugs
+      .filter((slug) => !STANDALONE_SLUGS.includes(slug))
+      .map((slug) => ({ topic: slug }));
   } catch {
     return [];
   }
